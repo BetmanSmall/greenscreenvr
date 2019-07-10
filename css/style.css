@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.header_logo img {
+    height: 50px;
+}
+.header_navigation {
+    display: flex;
+    align-items: center;
+}
+.nav_rawab {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.nav_li {
+    margin-left: 15px;
+    list-style: none;
+}
