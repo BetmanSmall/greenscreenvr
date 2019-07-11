@@ -1,7 +1,18 @@
+body {
+	background-color: #000000;
+}
+
+/* HEADER START */
 .header {
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
+		background-color: black;
+		z-index: 999;
+		position: fixed;
+		width: 100%;
+}
+
+.header_wrap {
+	display: flex;
+	justify-content: space-between;
 }
 .header_logo img {
     height: 50px;
@@ -13,9 +24,57 @@
 .nav_rawab {
     display: flex;
     align-items: center;
-    margin: 0;
+		margin: 0;
+		height: 100%;
 }
 .nav_li {
     margin-left: 15px;
-    list-style: none;
+		list-style: none;
+		height: 100%;
 }
+.nav_link {
+	display: block;
+	height: 100%;
+	line-height: 3;
+}
+/* HEADER END */
+
+/* SLIDERS START */
+#main {
+	padding-top: 50px;
+}
+.item img{
+	height: calc(100vh - 50px);
+}
+.owl-theme .owl-nav {
+	margin: 0;
+}
+.owl-nav {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+.owl-nav button span {
+	color: #ffffff;
+	font-size: 33px;
+}
+.owl-dots {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.owl-theme .owl-dots .owl-dot span {
+	width: 40px;
+	height: 10px;
+	margin: 5px 7px;
+	background: #D6D6D6;
+	display: block;
+	-webkit-backface-visibility: visible;
+	transition: opacity .2s ease;
+	border-radius: 3px;
+}
+/* SLIDERS END */
