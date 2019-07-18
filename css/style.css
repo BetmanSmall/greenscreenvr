@@ -1,145 +1,219 @@
 body {
-	background-color: #000000;
+    background-color: #000000;
 }
 
 /* HEADER START */
 .header {
-		background-color: black;
-		z-index: 999;
-		position: fixed;
-		width: 100%;
+    background-color: black;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
 }
 
 .header_wrap {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 .header_logo img {
     height: 50px;
 }
+
 .header_navigation {
     display: flex;
     align-items: center;
 }
+
 .nav_rawab {
     display: flex;
     align-items: center;
-		margin: 0;
-		height: 100%;
+    margin: 0;
+    height: 100%;
 }
+
 .nav_li {
     margin-left: 15px;
-		list-style: none;
-		height: 100%;
+    list-style: none;
+    height: 100%;
 }
+
 .nav_link {
-	display: block;
-	height: 100%;
-	line-height: 3;
+    display: block;
+    height: 100%;
+    line-height: 3;
 }
+
 /* HEADER END */
 
 /* SLIDERS START */
 #main {
-	padding-top: 50px;
+    padding-top: 50px;
 }
-.item img{
-	height: calc(100vh - 50px);
+
+.item img {
+    height: calc(100vh - 50px);
 }
+
 .owl-theme .owl-nav {
-	margin: 0;
+    margin: 0;
 }
+
 .owl-nav {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 40%;
-	display: flex;
-	justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
 }
+
 .owl-nav button span {
-	color: #ffffff;
-	font-size: 33px;
+    color: #ffffff;
+    font-size: 33px;
 }
+
 .owl-dots {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
+
 .owl-theme .owl-dots .owl-dot span {
-	width: 50px;
-	height: 10px;
-	margin: 5px 7px;
-	background: #D6D6D6;
-	display: block;
-	-webkit-backface-visibility: visible;
-	transition: opacity .2s ease;
-	border-radius: 3px;
+    width: 50px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 3px;
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-	-webkit-box-shadow: 0px 0px 10px 5px rgba(255,0,0,1);
--moz-box-shadow: 0px 0px 10px 5px rgba(255,0,0,1);
-box-shadow: 0px 0px 10px 5px rgba(255,0,0,1);
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 1);
+    box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 1);
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-	background: #D6D6D6;
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #D6D6D6;
 }
+
 /* SLIDERS END */
 .game_item {
-	background-color: #ffffff;
-	height: calc(50vh - 50px);
-	/* width: 100px; */
-	border: 1px solid #000;
+    background-color: #ffffff;
+    height: calc(50vh - 50px);
+    /* width: 100px; */
+    border: 1px solid #000;
 }
 
 .items_wrap {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	height: calc(100vh - 50px);
-	align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    align-items: center;
 }
 
 .Portfolio {
-	position: relative;
-	margin: 5px;
-	border: 2px solid black;
-	/* float: left; */
-	/* display: flex; */
-	width: 20%;
-	transition-duration: 0.4s;
-	border-radius: 5px;
-	animation: winanim 0.5s ;
--webkit-backface-visibility:visible;
-	backface-visibility:visible;
-	box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12)
+    position: relative;
+    margin: 5px;
+    border: 2px solid black;
+    /* float: left; */
+    /* display: flex; */
+    width: 20%;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    animation: winanim 0.5s;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12)
 }
 
 .Portfolio:hover {
-	/* box-shadow: 0 12px 16px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19); */
-	transform:scale(1.15);
-	-webkit-transform:scale(1.15);
-	-moz-transform:scale(1.15);
-	-o-transform:scale(1.15);
-	/* margin-left: 100px; */
-	/* margin-top: -60px; */
-	box-shadow: 0 10px 15px rgba(0,0,0,0.5);
-	z-index: 200;
+    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19); */
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    /* margin-left: 100px; */
+    /* margin-top: -60px; */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    z-index: 200;
 }
 
 .Portfolio img {
-	width: 100%;
-	height: auto;
-	border-radius: 5px
+    width: 100%;
+    height: auto;
+    border-radius: 5px
 }
 
 .desc {
-	padding: 5px;
-	text-align: center;
-	font-size: 90%;
-	background:black;
-	color:hotpink
+    padding: 5px;
+    text-align: center;
+    font-size: 90%;
+    background: black;
+    color: hotpink
+}
+
+table {
+    align-self: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    max-width: 70%;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  th {
+    color: #039;
+    border-bottom: 2px solid #6678b1;
+    padding: 10px 8px;
+  }
+  td {
+    color: #669;
+    padding: 9px 8px;
+    transition: .3s linear;
+    font-weight: bold;
+  }
+  tr:hover td {
+    color: #6699ff;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    /*position: absolute;*/
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
 }

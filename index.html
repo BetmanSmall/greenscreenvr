@@ -6,59 +6,148 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GreenScreen VR studio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="js/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="js/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="js/assets/owl.theme.green.min.css">
-		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="js/assets/owl.theme.green.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-        <header class="header">
-						<div class="container">
-							<div class="header_wrap">
-									<div class="header_logo">
-											<img src="img/linux-tux.svg" alt="logoGS">
-									</div>
-									<nav class="header_navigation">
-											<ul class="nav_rawab">
-													<li class="nav_li"><a href="#main" class="nav_link">Главная</a></li>
-													<li class="nav_li"><a href="#games" class="nav_link">Игры</a></li>
-													<li class="nav_li"><a href="#" class="nav_link">О нас</a></li>
-													<li class="nav_li"><a href="#" class="nav_link">Цены</a></li>
-													<li class="nav_li"><a href="#" class="nav_link">Контакты</a></li>
-											</ul>
-									</nav>
-							</div>
-					</div>
-				</header>
-				<section id="main" name="main">
-					<div class="owl-carousel owl-theme">
-						<div class="item"><img src="img/slider.png" alt=""></div>
-						<div class="item"><img src="img/slider.png" alt=""></div>
-						<div class="item"><img src="img/slider.png" alt=""></div>
-					</div>
-				</section>
-				<section id="games" name="games">
-					<div class="owl-carousel owl-theme">
-								<div class="items_wrap fade show active" id="showall" role="tabpanel" aria-labelledby="showall-tab">
-										<div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename1</div></div>
-										<div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename2</div></div>
-										<div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename3</div></div>
-										<div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename4</div></div>
-										<div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename5</div></div>
-										<div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename6</div></div>
-										<div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename7</div></div>
-										<div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename8</div></div>
-						</div>
-						<div class="item"><img src="img/slider.png" alt=""></div>
-						<div class="item"><img src="img/slider.png" alt=""></div>
-						<div class="item"><img src="img/slider.png" alt=""></div>
-					</div>
-				</section>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header_logo">
+                    <img src="img/linux-tux.svg" alt="logoGS">
+                </div>
+                <nav class="header_navigation">
+                    <ul class="nav_rawab">
+                        <li class="nav_li"><a href="#main" class="nav_link">Главная</a></li>
+                        <li class="nav_li"><a href="#games" class="nav_link">Игры</a></li>
+                        <li class="nav_li"><a href="#about" class="nav_link">О нас</a></li>
+                        <li class="nav_li"><a href="#price" class="nav_link">Цены</a></li>
+                        <li class="nav_li"><a href="#contacts" class="nav_link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="main" name="main">
+        <div class="owl-carousel owl-theme">
+            <div>
+                <video autoplay muted loop id="myVideo">
+                    <source src="videos/next10.mp4" type="video/mp4">
+                </video>
+                <div class="content">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum...</p>
+                    <!-- Use a button to pause/play the video with JavaScript -->
+                    <button id="myBtn" onclick="myFunction()">Pause</button>
+                </div>
+            </div>
+            <div class="item"><img src="img/slider.png" alt=""></div>
+            <div class="item"><img src="img/slider.png" alt=""></div>
+            <div class="item"><img src="img/slider.png" alt=""></div>
+        </div>
+    </section>
+    <section id="games" name="games">
+        <div class="owl-carousel owl-theme">
+            <div class="items_wrap fade show active" id="showall" role="tabpanel" aria-labelledby="showall-tab">
+                    <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename1</div></div>
+                    <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename2</div></div>
+                    <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename3</div></div>
+                    <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename4</div></div>
+                    <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename5</div></div>
+                    <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename6</div></div>
+                    <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename7</div></div>
+                    <div class="Portfolio"><a href="#!"><img class="card-img" src="http://placehold.it/400x400" alt=""></a><div class="desc">Gamename8</div></div>
+            </div>
+            <div class="item"><img src="img/slider.png" alt=""></div>
+            <div class="item"><img src="img/slider.png" alt=""></div>
+            <div class="item"><img src="img/slider.png" alt=""></div>
+        </div>
+    </section>
+    <section id="price" name="price">
+        <table align="center">
+            <tr>
+                <td>Цена/Устройство</td>
+                <td>HTC VIVE</td>
+                <td>HTC VIVE PRO</td>
+                <td>PS 4 PRO</td>
+                <td>HTC VIVE<br>PS 4 PRO</td>
+                <td>HTC VIVE PRO<br>PS 4 PRO</td>
+            </tr>
+            <tr>
+                <td>15 минут</td>
+                <td>300 ₽</td>
+                <td>400 ₽</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <td>30 минут</td>
+                <td>500 ₽</td>
+                <td>600 ₽</td>
+                <td>150 ₽</td>
+                <td>600 ₽</td>
+                <td>700 ₽</td>
+            </tr>
+            <tr>
+                <td>45 минут</td>
+                <td>650 ₽</td>
+                <td>750 ₽</td>
+                <td>200 ₽</td>
+                <td>800 ₽</td>
+                <td>900 ₽</td>
+            </tr>
+            <tr>
+                <td>60 минут</td>
+                <td>800 ₽</td>
+                <td>900 ₽</td>
+                <td>300 ₽</td>
+                <td>1000 ₽</td>
+                <td>1100 ₽</td>
+            </tr>
+            <tr>
+                <td>90 минут</td>
+                <td>1050 ₽</td>
+                <td>1150 ₽</td>
+                <td>450 ₽</td>
+                <td>1400 ₽</td>
+                <td>1500 ₽</td>
+            </tr>
+            <tr>
+                <td>120 минут</td>
+                <td>1300 ₽</td>
+                <td>1400 ₽</td>
+                <td>600 ₽</td>
+                <td>1800 ₽</td>
+                <td>1900 ₽</td>
+            </tr>
+        </table>
+    </section>
 </body>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/custom.js"></script>
+
+<script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+    
+    // Get the button
+    var btn = document.getElementById("myBtn");
+    
+    // Pause and play the video, and change the button text
+    function myFunction() {
+        if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+        } else {
+        video.pause();
+        btn.innerHTML = "Play";
+        }
+    }
+</script>
+
 </html>
