@@ -159,8 +159,8 @@ body {
     color: hotpink
 }
 
-table {
-    align-self: center;
+  table {
+    /* align: center; */
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 14px;
     max-width: 70%;
@@ -181,7 +181,7 @@ table {
   }
   tr:hover td {
     color: #6699ff;
-}
+  }
 
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
@@ -216,4 +216,17 @@ table {
 #myBtn:hover {
     background: #ddd;
     color: black;
+}
+
+.about_info {
+    text-align: center;
+    align-self:center;
+    width: 50%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    border-collapse: collapse;
+    color: #039;
+}
+
+.contacts_tels {
+    color: #039;
 }
