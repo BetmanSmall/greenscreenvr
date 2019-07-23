@@ -1,6 +1,13 @@
-/*body {
-    background-color: #000000;
-}*/
+body {
+    background-color: #131418 !important;
+}
+
+.navbar{
+    background-color: #1e1f26 !important;
+}
+.navbar a{
+    color: white;
+}
 
 /* HEADER START */
 /*.header {
@@ -48,6 +55,9 @@
 /* SLIDERS START */
 #main {
     padding-top: 50px;
+}
+.owl-carousel{
+    
 }
 
 .item img {
@@ -114,12 +124,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: calc(100vh - 50px);
+    /*height: calc(100vh - 50px);*/
     align-items: center;
 }
 
 .Portfolio {
-    position: relative;
+    
     margin: 5px;
     border: 2px solid black;
     /* float: left; */
@@ -160,7 +170,7 @@
 }
 
   table {
-    /* align: center; */
+    margin: auto;
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 14px;
     max-width: 70%;
@@ -219,14 +229,13 @@
 }
 
 .about_info {
-    text-align: center;
-    align-self:center;
+    margin: auto;
     width: 50%;
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     border-collapse: collapse;
-    color: #039;
+    color: #fff;
 }
 
 .contacts_tels {
-    color: #039;
+    color: #fff;
 }
