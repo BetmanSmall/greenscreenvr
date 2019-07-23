@@ -1,9 +1,9 @@
-body {
+/*body {
     background-color: #000000;
-}
+}*/
 
 /* HEADER START */
-.header {
+/*.header {
     background-color: black;
     z-index: 999;
     position: fixed;
@@ -17,9 +17,9 @@ body {
 
 .header_logo img {
     height: 50px;
-}
+}*/
 
-.header_navigation {
+/*.header_navigation {
     display: flex;
     align-items: center;
 }
@@ -41,7 +41,7 @@ body {
     display: block;
     height: 100%;
     line-height: 3;
-}
+}*/
 
 /* HEADER END */
 
