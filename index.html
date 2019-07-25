@@ -1,235 +1,346 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<!-- start meta -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<!-- end meta -->
-
-	<!-- start title -->
-	<link rel="icon" href="">
-	<title>GreenScreen VR studio</title>
-	<!-- end titile -->
-
-	<!-- start link -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/style-carousel.css">
-	<!-- end link -->
+    <!-- start meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- end meta -->
+    <!-- start title -->
+    <link rel="icon" href="">
+    <title>GreenScreen VR studio</title>
+    <!-- end titile -->
+    <!-- start link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- end link -->
 </head>
-<body>
-	<header class="header">
-		<nav class="navbar navbar-toggleable-md fixed-top">
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<a class="navbar-brand" href="#"><img src="img/GS.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-			GreenScreen VR studio</a>
-			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<ul class="navbar-nav ml-auto mr-5">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Главная</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Игры</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">О нас</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Цены</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Контакты</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-	<section class="main-slider pt-5">
-		<div class="item youtube">
-			<span class="loading">Loading...</span>
-			<figure>
-				<iframe class="embed-player slide-media" width="980" height="520" src="https://www.youtube.com/embed/fXTuWhwW9Ok?enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1" frameborder="0" allowfullscreen></iframe> 
-				<figcaption class="caption">YouTube</figcaption>
-			</figure>
-		</div>
-		<div class="item video">
-			<video class="slide-video slide-media" loop muted preload="metadata" poster="">
-				<source src="videos/next10.mp4" type="video/mp4" />
-			</video>
-			<p class="caption">HTML 5 Video</p>
-		</div>
-	</section>
-	<div id="games" name="games">
-		<div class="container">
-			<div class="items_wrap fade show active" id="showall" role="tabpanel" aria-labelledby="showall-tab">
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/364630/AirMech_Command/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/364630/header.jpg"></a><div class="desc">AirMech_Command</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/342180/Arizona_Sunshine/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/342180/header.jpg"></a><div class="desc">Arizona_Sunshine</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/522020/Blue_Effect_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/522020/header.jpg"></a><div class="desc">Blue_Effect_VR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/400940/Budget_Cuts/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/400940/header.jpg"></a><div class="desc">Budget_Cuts</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/533970/Blocks_by_Google/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/533970/header.jpg"></a><div class="desc">Blocks_by_Google</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/525640/Bullets_And_More_VR__BAM_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/525640/header.jpg"></a><div class="desc">Bullets_And_More_VR__BAM_VR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/587470/Chroma_Lab/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/587470/header.jpg"></a><div class="desc">Chroma_Lab</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/520010/Climbey/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/520010/header.jpg"></a><div class="desc">Climbey</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/963930/Contractors/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/963930/header.jpg"></a><div class="desc">Contractors</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/503770/Elven_Assassin/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/503770/header.jpg"></a><div class="desc">Elven_Assassin</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/512080/Fancy_Skiing_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/512080/header.jpg"></a><div class="desc">Fancy_Skiing_VR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/611660/Fallout_4_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/611660/header.jpg"></a><div class="desc">Fallout_4_VR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/348250/Google_Earth_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/348250/header.jpg"></a><div class="desc">Google_Earth_VR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/578620/GORN/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/578620/header.jpg"></a><div class="desc">GORN</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/716260/GunsnStories_Preface_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/716260/header.jpg"></a><div class="desc">GunsnStories_Preface_VR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/512270/Home__A_VR_Spacewalk/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/512270/header.jpg"></a><div class="desc">Home_-_A_VR_Spacewalk</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/448280/Job_Simulator/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/448280/header.jpg"></a><div class="desc">Job_Simulator</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/382000/Mindshow/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/382000/header.jpg"></a><div class="desc">Mindshow</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/468700/NVIDIA_VR_Funhouse/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/468700/header.jpg"></a><div class="desc">NVIDIA_VR_Funhouse</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/496240/Onward/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/496240/header.jpg"></a><div class="desc">Onward</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/555160/Pavlov_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/555160/header.jpg"></a><div class="desc">Pavlov_VR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/218620/PAYDAY_2/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/218620/header.jpg"></a><div class="desc">PAYDAY_2</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/446750/Portal_Stories_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/446750/header.jpg"></a><div class="desc">Portal_Stories_VR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/234630/Project_CARS/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/234630/header.jpg"></a><div class="desc">Project_CARS</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/471710/Rec_Room/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/471710/header.jpg"></a><div class="desc">Rec_Room</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/555880/Sairento_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/555880/header.jpg"></a><div class="desc">Sairento_VR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/567670/Serious_Sam_3_VR_BFE/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/567670/header.jpg"></a><div class="desc">Serious_Sam_3_VR_BFE</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/564310/Serious_Sam_Fusion_2017_beta/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/564310/header.jpg"></a><div class="desc">Serious_Sam_Fusion_2017_beta</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/552450/Serious_Sam_VR_The_First_Encounter/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/552450/header.jpg"></a><div class="desc">Serious_Sam_VR_The_First_Encounter</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/465240/Serious_Sam_VR_The_Last_Hope/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/465240/header.jpg"></a><div class="desc">Serious_Sam_VR_The_Last_Hope</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/552460/Serious_Sam_VR_The_Second_Encounter/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/552460/header.jpg"></a><div class="desc">Serious_Sam_VR_The_Second_Encounter</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/530350/Smashbox_Arena/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/530350/header.jpg"></a><div class="desc">Smashbox_Arena</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/647590/Space_Junkies/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/647590/header.jpg"></a><div class="desc">Space_Junkies</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/418650/Space_Pirate_Trainer/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/418650/header.jpg"></a><div class="desc">Space_Pirate_Trainer</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/645480/SpiderMan_Homecoming__Virtual_Reality_Experience/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/645480/header.jpg"></a><div class="desc">SpiderMan_Homecoming__Virtual_Reality_Experience</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/1067800/SpiderMan_Far_From_Home_Virtual_Reality/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/1067800/header.jpg"></a><div class="desc">SpiderMan_Far_From_Home_Virtual_Reality</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/748370/STAND_OUT__VR_Battle_Royale/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/748370/header.jpg"></a><div class="desc">STAND_OUT_-_VR_Battle_Royale</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/617830/SUPERHOT_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/617830/header.jpg"></a><div class="desc">SUPERHOT_VR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/440630/The_Brookhaven_Experiment/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/440630/header.jpg"></a><div class="desc">The_Brookhaven_Experiment</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/611670/The_Elder_Scrolls_V_Skyrim_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/611670/header.jpg"></a><div class="desc">The_Elder_Scrolls_V_Skyrim_VR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/450390/The_Lab/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/450390/header.jpg"></a><div class="desc">The_Lab</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/552440/The_Talos_Principle_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/552440/header.jpg"></a><div class="desc">The_Talos_Principle_VR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/327140/Tilt_Brush/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/327140/header.jpg"></a><div class="desc">Tilt_Brush</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/509250/TO_THE_TOP/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/509250/header.jpg"></a><div class="desc">TO_THE_TOP</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/494960/Twisted_Arrow/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/494960/header.jpg"></a><div class="desc">Twisted_Arrow</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/438100/VRChat/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/438100/header.jpg"></a><div class="desc">VRChat</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/236390/War_Thunder/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/236390/header.jpg"></a><div class="desc">War_Thunder</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/681390/ZomDay/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/681390/header.jpg"></a><div class="desc">ZomDay</div></div>
-				<div class="Portfolio"><a href="http://www.vivecraft.org/"><img class="card-img" src="http://i1.wp.com/www.vivecraft.org/wp-content/uploads/2016/07/wesYwME.png"></a><div class="desc">Vivecraft(Minecraft)</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/908520/fpsVR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/908520/header.jpg"></a><div class="desc">fpsVR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/755540/LIV/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/755540/header.jpg"></a><div class="desc">LIV</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/457550/Bigscreen_Beta/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/457550/header.jpg"></a><div class="desc">Bigscreen_Beta</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/365670/Blender/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/365670/header.jpg"></a><div class="desc">BlenderXR</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/570/Dota_2/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.jpg"></a><div class="desc">Dota_2_VR_Hub</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/4000/Garrys_Mod/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/4000/header.jpg"></a><div class="desc">Garrys_Mod_VRMod</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/70/HalfLife/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/70/header.jpg"></a><div class="desc">HalfLife_VRMod</div></div>
-				<div class="Portfolio"><a href="https://store.steampowered.com/app/504650/MasterpieceVR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/504650/header.jpg"></a><div class="desc">MasterpieceVR</div></div>
-				<div class="Portfolio"><a href="https://docs.unrealengine.com/en-US/Engine/Editor/VR/index.html"><img class="card-img" src="https://i.ytimg.com/vi/JKO9fEjNiio/maxresdefault.jpg"></a><div class="desc">UnrealEngine_VRMod</div></div>
-			</div>
-		</div>
-	</div>
-	<div id="about" name="about">
-		<div class="container">
-			<div class="about_info">Клуб Виртуальной реальности нового формата!<br>
-				Здесь ты можешь не только развлекаться, играть, но и устроить необычную фотосессию на невероятном фоне, который можно установить с помощью технологии хромакея!<br>
-				В Вашем распоряжении будут очки виртуальной реальности HTC Vive и HTC Vive Pro, а так же консоли PlayStation 4 Pro, чтобы уничтожить скуку в ожидании своего погружения в виртуальную реальность!
-			</div>
-		</div>
-	</div>
-	<div id="price" name="price">
-		<div class="container">
-			<table>
-				<tr>
-					<td>Цена/Устройство</td>
-					<td>HTC VIVE</td>
-					<td>HTC VIVE PRO</td>
-					<td>PS 4 PRO</td>
-					<td>HTC VIVE<br>PS 4 PRO</td>
-					<td>HTC VIVE PRO<br>PS 4 PRO</td>
-				</tr>
-				<tr>
-					<td>15 минут</td>
-					<td>300 ₽</td>
-					<td>400 ₽</td>
-					<td>---</td>
-					<td>---</td>
-					<td>---</td>
-				</tr>
-				<tr>
-					<td>30 минут</td>
-					<td>500 ₽</td>
-					<td>600 ₽</td>
-					<td>150 ₽</td>
-					<td>600 ₽</td>
-					<td>700 ₽</td>
-				</tr>
-				<tr>
-					<td>45 минут</td>
-					<td>650 ₽</td>
-					<td>750 ₽</td>
-					<td>200 ₽</td>
-					<td>800 ₽</td>
-					<td>900 ₽</td>
-				</tr>
-				<tr>
-					<td>60 минут</td>
-					<td>800 ₽</td>
-					<td>900 ₽</td>
-					<td>300 ₽</td>
-					<td>1000 ₽</td>
-					<td>1100 ₽</td>
-				</tr>
-				<tr>
-					<td>90 минут</td>
-					<td>1050 ₽</td>
-					<td>1150 ₽</td>
-					<td>450 ₽</td>
-					<td>1400 ₽</td>
-					<td>1500 ₽</td>
-				</tr>
-				<tr>
-					<td>120 минут</td>
-					<td>1300 ₽</td>
-					<td>1400 ₽</td>
-					<td>600 ₽</td>
-					<td>1800 ₽</td>
-					<td>1900 ₽</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-	<div id="contacts" name="contacts">
-		<div class="container">
-			<div class="raw d-flex align-items-stretch">
-				<div class="col">
-					<div><a href="https://www.instagram.com/greenscreenvr/">Instagram</a></div>
-					<div><a href="https://vk.com/gsvrs">VK</a></div>
-					<div><a href="https://2gis.ru/n_novgorod/firm/70000001037258566?queryState=center%2F44.007068%2C56.323397%2Fzoom%2F18">г. Нижний Новгород, ул. Ошарская 1/2</a></div>
-					<div class="contacts_tels">Телефоны:
-						<li>+7 (930) 70-969-70</li>
-						<li>+7 (929) 042-08-51</li>
-						<li>+7 (905) 661-56-64</li>
-						<div>
-							<p><a href="mailto:greenscreenvr@gmail.com">greenscreenvr@gmail.com</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<iframe align="center" src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=4230094451" width="800" height="400" frameborder="0"></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- jQuery first, then Tether, then Bootstrap JS. -->
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
-	<!-- <script src="js/owl.carousel.min.js"></script> -->
-	<!-- <script src="js/custom.js"></script> -->
-	<script src="js/carousel.js"></script>
 
+<body>
+    <header class="header">
+        <nav class="navbar fixed-top transperent navbar-expand-lg navbar-inverse">
+            <a class="navbar-brand" href="#"><img src="img/GS.svg" width="50" height="50" class="d-inline-block align-top" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Игры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Цены</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="overlay"></div>
+        <video autoplay="autoplay" muted="muted" loop="loop">
+            <source src="videos/banner.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3">GreenScreen VR studio</h1>
+                    <p class="lead mb-0">Клуб виртуальной реальности</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="games" name="games">
+            <div class="container">
+                <div class="items_wrap fade show active" id="showall" role="tabpanel" aria-labelledby="showall-tab">
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/364630/AirMech_Command/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/364630/header.jpg"></a>
+                        <div class="desc">AirMech_Command</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/342180/Arizona_Sunshine/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/342180/header.jpg"></a>
+                        <div class="desc">Arizona_Sunshine</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/522020/Blue_Effect_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/522020/header.jpg"></a>
+                        <div class="desc">Blue_Effect_VR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/400940/Budget_Cuts/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/400940/header.jpg"></a>
+                        <div class="desc">Budget_Cuts</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/533970/Blocks_by_Google/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/533970/header.jpg"></a>
+                        <div class="desc">Blocks_by_Google</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/525640/Bullets_And_More_VR__BAM_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/525640/header.jpg"></a>
+                        <div class="desc">Bullets_And_More_VR__BAM_VR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/587470/Chroma_Lab/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/587470/header.jpg"></a>
+                        <div class="desc">Chroma_Lab</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/520010/Climbey/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/520010/header.jpg"></a>
+                        <div class="desc">Climbey</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/963930/Contractors/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/963930/header.jpg"></a>
+                        <div class="desc">Contractors</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/503770/Elven_Assassin/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/503770/header.jpg"></a>
+                        <div class="desc">Elven_Assassin</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/512080/Fancy_Skiing_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/512080/header.jpg"></a>
+                        <div class="desc">Fancy_Skiing_VR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/611660/Fallout_4_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/611660/header.jpg"></a>
+                        <div class="desc">Fallout_4_VR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/348250/Google_Earth_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/348250/header.jpg"></a>
+                        <div class="desc">Google_Earth_VR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/578620/GORN/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/578620/header.jpg"></a>
+                        <div class="desc">GORN</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/716260/GunsnStories_Preface_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/716260/header.jpg"></a>
+                        <div class="desc">GunsnStories_Preface_VR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/512270/Home__A_VR_Spacewalk/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/512270/header.jpg"></a>
+                        <div class="desc">Home_-_A_VR_Spacewalk</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/448280/Job_Simulator/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/448280/header.jpg"></a>
+                        <div class="desc">Job_Simulator</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/382000/Mindshow/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/382000/header.jpg"></a>
+                        <div class="desc">Mindshow</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/468700/NVIDIA_VR_Funhouse/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/468700/header.jpg"></a>
+                        <div class="desc">NVIDIA_VR_Funhouse</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/496240/Onward/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/496240/header.jpg"></a>
+                        <div class="desc">Onward</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/555160/Pavlov_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/555160/header.jpg"></a>
+                        <div class="desc">Pavlov_VR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/218620/PAYDAY_2/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/218620/header.jpg"></a>
+                        <div class="desc">PAYDAY_2</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/446750/Portal_Stories_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/446750/header.jpg"></a>
+                        <div class="desc">Portal_Stories_VR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/234630/Project_CARS/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/234630/header.jpg"></a>
+                        <div class="desc">Project_CARS</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/471710/Rec_Room/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/471710/header.jpg"></a>
+                        <div class="desc">Rec_Room</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/555880/Sairento_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/555880/header.jpg"></a>
+                        <div class="desc">Sairento_VR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/567670/Serious_Sam_3_VR_BFE/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/567670/header.jpg"></a>
+                        <div class="desc">Serious_Sam_3_VR_BFE</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/564310/Serious_Sam_Fusion_2017_beta/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/564310/header.jpg"></a>
+                        <div class="desc">Serious_Sam_Fusion_2017_beta</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/552450/Serious_Sam_VR_The_First_Encounter/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/552450/header.jpg"></a>
+                        <div class="desc">Serious_Sam_VR_The_First_Encounter</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/465240/Serious_Sam_VR_The_Last_Hope/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/465240/header.jpg"></a>
+                        <div class="desc">Serious_Sam_VR_The_Last_Hope</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/552460/Serious_Sam_VR_The_Second_Encounter/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/552460/header.jpg"></a>
+                        <div class="desc">Serious_Sam_VR_The_Second_Encounter</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/530350/Smashbox_Arena/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/530350/header.jpg"></a>
+                        <div class="desc">Smashbox_Arena</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/647590/Space_Junkies/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/647590/header.jpg"></a>
+                        <div class="desc">Space_Junkies</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/418650/Space_Pirate_Trainer/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/418650/header.jpg"></a>
+                        <div class="desc">Space_Pirate_Trainer</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/645480/SpiderMan_Homecoming__Virtual_Reality_Experience/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/645480/header.jpg"></a>
+                        <div class="desc">SpiderMan_Homecoming__Virtual_Reality_Experience</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/1067800/SpiderMan_Far_From_Home_Virtual_Reality/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/1067800/header.jpg"></a>
+                        <div class="desc">SpiderMan_Far_From_Home_Virtual_Reality</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/748370/STAND_OUT__VR_Battle_Royale/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/748370/header.jpg"></a>
+                        <div class="desc">STAND_OUT_-_VR_Battle_Royale</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/617830/SUPERHOT_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/617830/header.jpg"></a>
+                        <div class="desc">SUPERHOT_VR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/440630/The_Brookhaven_Experiment/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/440630/header.jpg"></a>
+                        <div class="desc">The_Brookhaven_Experiment</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/611670/The_Elder_Scrolls_V_Skyrim_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/611670/header.jpg"></a>
+                        <div class="desc">The_Elder_Scrolls_V_Skyrim_VR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/450390/The_Lab/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/450390/header.jpg"></a>
+                        <div class="desc">The_Lab</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/552440/The_Talos_Principle_VR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/552440/header.jpg"></a>
+                        <div class="desc">The_Talos_Principle_VR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/327140/Tilt_Brush/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/327140/header.jpg"></a>
+                        <div class="desc">Tilt_Brush</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/509250/TO_THE_TOP/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/509250/header.jpg"></a>
+                        <div class="desc">TO_THE_TOP</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/494960/Twisted_Arrow/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/494960/header.jpg"></a>
+                        <div class="desc">Twisted_Arrow</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/438100/VRChat/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/438100/header.jpg"></a>
+                        <div class="desc">VRChat</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/236390/War_Thunder/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/236390/header.jpg"></a>
+                        <div class="desc">War_Thunder</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/681390/ZomDay/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/681390/header.jpg"></a>
+                        <div class="desc">ZomDay</div>
+                    </div>
+                    <div class="Portfolio"><a href="http://www.vivecraft.org/"><img class="card-img" src="http://i1.wp.com/www.vivecraft.org/wp-content/uploads/2016/07/wesYwME.png"></a>
+                        <div class="desc">Vivecraft(Minecraft)</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/908520/fpsVR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/908520/header.jpg"></a>
+                        <div class="desc">fpsVR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/755540/LIV/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/755540/header.jpg"></a>
+                        <div class="desc">LIV</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/457550/Bigscreen_Beta/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/457550/header.jpg"></a>
+                        <div class="desc">Bigscreen_Beta</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/365670/Blender/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/365670/header.jpg"></a>
+                        <div class="desc">BlenderXR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/570/Dota_2/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.jpg"></a>
+                        <div class="desc">Dota_2_VR_Hub</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/4000/Garrys_Mod/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/4000/header.jpg"></a>
+                        <div class="desc">Garrys_Mod_VRMod</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/70/HalfLife/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/70/header.jpg"></a>
+                        <div class="desc">HalfLife_VRMod</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://store.steampowered.com/app/504650/MasterpieceVR/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/504650/header.jpg"></a>
+                        <div class="desc">MasterpieceVR</div>
+                    </div>
+                    <div class="Portfolio"><a href="https://docs.unrealengine.com/en-US/Engine/Editor/VR/index.html"><img class="card-img" src="https://i.ytimg.com/vi/JKO9fEjNiio/maxresdefault.jpg"></a>
+                        <div class="desc">UnrealEngine_VRMod</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" name="about">
+            <div class="container">
+                <div class="about_info">Клуб Виртуальной реальности нового формата!<br>
+                    Здесь ты можешь не только развлекаться, играть, но и устроить необычную фотосессию на невероятном фоне, который можно установить с помощью технологии хромакея!<br>
+                    В Вашем распоряжении будут очки виртуальной реальности HTC Vive и HTC Vive Pro, а так же консоли PlayStation 4 Pro, чтобы уничтожить скуку в ожидании своего погружения в виртуальную реальность!
+                </div>
+            </div>
+        </div>
+        <div id="price" name="price">
+            <div class="container">
+                <table>
+                    <tr>
+                        <td>Цена/Устройство</td>
+                        <td>HTC VIVE</td>
+                        <td>HTC VIVE PRO</td>
+                        <td>PS 4 PRO</td>
+                        <td>HTC VIVE<br>PS 4 PRO</td>
+                        <td>HTC VIVE PRO<br>PS 4 PRO</td>
+                    </tr>
+                    <tr>
+                        <td>15 минут</td>
+                        <td>300 ₽</td>
+                        <td>400 ₽</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>30 минут</td>
+                        <td>500 ₽</td>
+                        <td>600 ₽</td>
+                        <td>150 ₽</td>
+                        <td>600 ₽</td>
+                        <td>700 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>45 минут</td>
+                        <td>650 ₽</td>
+                        <td>750 ₽</td>
+                        <td>200 ₽</td>
+                        <td>800 ₽</td>
+                        <td>900 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>60 минут</td>
+                        <td>800 ₽</td>
+                        <td>900 ₽</td>
+                        <td>300 ₽</td>
+                        <td>1000 ₽</td>
+                        <td>1100 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>90 минут</td>
+                        <td>1050 ₽</td>
+                        <td>1150 ₽</td>
+                        <td>450 ₽</td>
+                        <td>1400 ₽</td>
+                        <td>1500 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>120 минут</td>
+                        <td>1300 ₽</td>
+                        <td>1400 ₽</td>
+                        <td>600 ₽</td>
+                        <td>1800 ₽</td>
+                        <td>1900 ₽</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="contacts" name="contacts">
+            <div class="container">
+                <div class="raw d-flex align-items-stretch">
+                    <div class="col">
+                        <div><a href="https://www.instagram.com/greenscreenvr/">Instagram</a></div>
+                        <div><a href="https://vk.com/gsvrs">VK</a></div>
+                        <div><a href="https://2gis.ru/n_novgorod/firm/70000001037258566?queryState=center%2F44.007068%2C56.323397%2Fzoom%2F18">г. Нижний Новгород, ул. Ошарская 1/2</a></div>
+                        <div class="contacts_tels">Телефоны:
+                            <li>+7 (930) 70-969-70</li>
+                            <li>+7 (929) 042-08-51</li>
+                            <li>+7 (905) 661-56-64</li>
+                            <div>
+                                <p><a href="mailto:greenscreenvr@gmail.com">greenscreenvr@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <iframe align="center" src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=4230094451" width="800" height="400" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <script src="js/skel.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
+
 </html>
