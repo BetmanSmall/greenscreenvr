@@ -416,13 +416,26 @@ var gameList = [{
 ]
 $(function() {
     $.each(gameList, function(index, i) {
-        $('#gameList').append(
-        	'<div class="col-12 col-md-6 col-xl-4">'+
-        		'<div class="d-flex flex-column align-items-end justify-content-between p-3 block">'+
+        if (i.steamId != null) {
+            $('#gameList').append(
+                '<div class="col-12 col-md-6 col-xl-4">'+
+                    '<div class="d-flex flex-column align-items-end justify-content-between p-3 block">'+
                             '<div class="Portfolio"><a href="https://store.steampowered.com/app/' + i.steamId + '/">'+
-                            	'<img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/'+ i.steamId +'/header.jpg">'+
-                            	'</a><div class="desc">'+ i.gameName +
-                            '</div>'+
-                '</div>');
+                                '<img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/'+ i.steamId +'/header.jpg">'+
+                                '</a><div class="desc">'+ i.gameName +
+                    '</div>'+
+                '</div>'
+            )
+        } else {
+            $('#gameList').append(
+                '<div class="col-12 col-md-6 col-xl-4">'+
+                    '<div class="d-flex flex-column align-items-end justify-content-between p-3 block">'+
+                            '<div class="Portfolio"><a href="' + i.url + '/">'+
+                                '<img class="card-img" src="'+ i.headerImgURL +'">'+
+                                '</a><div class="desc">'+ i.gameName +
+                    '</div>'+
+                '</div>'
+            )
+        }
     });
 });
