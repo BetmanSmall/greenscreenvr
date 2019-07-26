@@ -1,6 +1,11 @@
 var count_show = parseInt($('#show_more').attr('count_show'));
 var count_add = parseInt($('#show_more').attr('count_add'));
 $(function() {
+
+    $.getJSON("/gameLoad.php?link=http://store.steampowered.com/api/appdetails?appids=57690&l=ru", function(data) {
+        console.log(data);
+    });
+
     $.getJSON("/js/gameList.json", function(data) {
         for (var i = count_show; i < count_show + count_add; i++) {
             if (data[i].steamId != null) {
@@ -52,7 +57,7 @@ $(function() {
                             '</div>'
                         )
                     }
-                }else $('#show_more').remove();
+                } else $('#show_more').remove();
 
             }
             count_show += count_add;
