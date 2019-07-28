@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 
 <head>
@@ -61,12 +60,51 @@
             </div>
         </div>
     </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <div id="games" name="games">
             <div class="container">
                 <div id="gameList" class="row">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="d-flex flex-column align-items-end justify-content-between p-3 block">
+                            <div class="Portfolio">
+                                <a href="https://store.steampowered.com/app/342180/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/342180/header.jpg?t=1563533235">
+                                </a>
+                                <div class="desc">Arizona Sunshine</div>
+                                <!-- <button type="button" class="btn btn-primary icon" data-toggle="modal" data-target="#exampleModal" data-whatever="Arizona Sunshine"></button> -->
+                                <a class="game_info" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="Arizona Sunshine"><img src="img/icons8-info-50.png" class="icon" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                 <input id="show_more" count_show="0" count_add="6" type="button" value="Показать еще" />
+                <input id="show_more" count_show="0" count_add="6" type="button" value="Показать еще" />
             </div>
         </div>
         <div id="price" name="price">
