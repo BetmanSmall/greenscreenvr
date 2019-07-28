@@ -8,7 +8,7 @@ function showGameCard(steamId) {
     $.ajax({
         type: "GET",
         url: "/gameLoad.php",
-        data: 'link=http://store.steampowered.com/api/appdetails?appids=' + steamId + '&cc=en&l=ru',
+        data: 'link=http://store.steampowered.com/api/appdetails?appids=' + steamId + '&cc=ru&l=ru', //???
         dataType: "json",
         cache: false,
         success: function(dataApi) {
@@ -27,6 +27,23 @@ function showGameCard(steamId) {
                     '</div>' +
                     '</div>'
                 )
+                $('body').append(
+                    ' <div class="modal fade bd-example-modal-lg" id="m' + steamId + '" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">' +
+                    '<div class="modal-dialog modal-lg modal-dialog-centered" role="document">' +
+                    ' <div class="modal-content">' +
+                    '<div class="modal-header">' +
+                    '<h4 class="modal-title">'+dataApi[steamId][keyData].name+'</h4>' +
+                    '<button type="button" class="close" data-dismiss="modal">×</button>' +
+                    '</div>' +
+                    '<div class="modal-body">' +
+                    dataApi[steamId][keyData].about_the_game+
+                    '</div>' +
+                    '<div class="modal-footer">' +
+                    '</div>' +
+                    '</div>' +
+                    ' </div>' +
+                    '</div>'
+                    )
             } else { console.log("steamId: " + steamId + ": success false") }
             count_show++;
             // console.log("steamId: " + steamId + "\n header_image: " + dataApi[steamId][keyData].header_image + "\n name: " + dataApi[steamId][keyData].name);
@@ -67,53 +84,6 @@ function initGame() {
     });
 }
 
-function generateModal(steamId) {
-    $.ajax({
-        type: "GET",
-        url: "/gameLoad.php",
-        data: 'link=http://store.steampowered.com/api/appdetails?appids=' + steamId + '&cc=en&l=ru',
-        dataType: "json",
-        cache: false,
-        success: function(dataApi) {
-            $('body').append(
-                ' <div class="modal fade" id="m' + steamId + '" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">' +
-                '<div class="modal-dialog modal-dialog-centered" role="document">' +
-                ' <div class="modal-content">' +
-                '<div class="modal-header">' +
-                '<h4 class="modal-title">Modal Heading</h4>' +
-                '<button type="button" class="close" data-dismiss="modal">×</button>' +
-                '</div>' +
-                '<div class="modal-body">' +
-                '</div>' +
-                '<div class="modal-footer">' +
-                '</div>' +
-                '</div>' +
-                ' </div>' +
-                '</div>'
-            )
-        },
-        error: function(jqXHR, exception) {
-            var msg = '';
-            if (jqXHR.status === 0) {
-                msg = 'Not connect.\n Verify Network.';
-            } else if (jqXHR.status == 404) {
-                msg = 'Requested page not found. [404]';
-            } else if (jqXHR.status == 500) {
-                msg = 'Internal Server Error [500].';
-            } else if (exception === 'parsererror') {
-                msg = 'Requested JSON parse failed.';
-            } else if (exception === 'timeout') {
-                msg = 'Time out error.';
-            } else if (exception === 'abort') {
-                msg = 'Ajax request aborted.';
-            } else {
-                msg = 'Uncaught Error.\n' + jqXHR.responseText;
-            }
-            console.log(msg);
-        }
-    });
-}
-
 $(document).ready(function() {
     $(async function() {
         try {
@@ -131,7 +101,6 @@ $(document).ready(function() {
                 showGameCard(arr_steamID[i]);
             }
         } catch (err) { console.log(err); }
-        generateModal("364630");
     });
 });
 $('#show_more').click(function() {
@@ -141,7 +110,4 @@ $('#show_more').click(function() {
     // if (count_show = arr_steamID.length) {
     //     $('#show_more').remove();
     // }
-});
-$('game_info').click(function() {
-
 });
