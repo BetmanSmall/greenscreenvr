@@ -4,8 +4,9 @@ body {
     font-weight: lighter;
 }
 
-h2 {
+h1,h2 {
     text-align: center;
+    color: white;
 }
 
 .navbar a {
@@ -101,6 +102,11 @@ h2 {
     /*border: 2px;*/
 }
 
+#price td{
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+}
+
 table {
     margin: auto;
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
@@ -176,7 +182,7 @@ header .overlay {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.9;
     z-index: 1;
 }
 
