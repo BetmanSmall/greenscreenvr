@@ -20,7 +20,7 @@ function showGameCard(steamId) {
                                 '<a href="https://store.steampowered.com/app/' + steamId + '/">' +
                                 '<img class="card-img" src="' + dataApi[steamId][keyData].header_image + '">' +
                                 '<div id="slide">'+
-                                    '<a class="game_info" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="'+dataApi[steamId][keyData].name+'"><img src="img/icons8-info-50.png" class="icon" alt=""></a>'+
+                                    '<a class="game_info" href="#" data-toggle="modal" data-target="#'+steamId+'" data-whatever="'+dataApi[steamId][keyData].name+'"><img src="img/icons8-info-50.png" class="icon" alt=""></a>'+
                                 '</div>' +
                             '</div>'+
                         '</div>'+

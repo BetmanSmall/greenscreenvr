@@ -60,30 +60,18 @@
             </div>
         </div>
     </header>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" id="ID" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <!-- <h5 class="modal-title ml-auto" id="ModalLabel">New message</h5> -->
+                    <button type="button" class="close d-inline-block align-top" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Recipient:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send message</button>
+                    <!-- Описание игры -->
+                    <img src="https://steamcdn-a.akamaihd.net/steam/apps/342180/extras/AZS_Launch_Trailer_1.jpg?t=1563533235" class="img-fluid"><h2 class="bb_tag">Arizona Sunshine</h2>Зомби-апокалипсис в виртуальной реальности! &quot;Солнечная Аризона&quot; - это шутер от первого лица, созданный исключительно для виртуальной реальности и погружающий вас в постапокалиптический мир юго-запада Америки, кишащий зомби. <br><br>Надежда возвращается, когда вы слышите человеческий голос в радиотрансляции: есть, есть выжившие в этом раскаленном от жары постапокалиптическом штате Большого каньона! В своих отчаянных попытках найти людей вам придется пробиться сквозь орды зомби, охотящихся за вашим мозгом, а поможет вам в этом оружие, управляемое движениями вашего тела, скудный боезапас и расходные материалы, которые встретятся на вашем пути.<br><br>Разработанная исключительно для виртуальной реальности, игра &quot;Солнечная Аризона&quot; погружает вас в самый эпицентр зомби-апокалипсиса. Реалистичные движения при обращении с оружием, открытый для исследования постапокалиптический мир, возможность испытать свои навыки выживания в виртуальной реальности - упокоение неупокоенных еще никогда не было таким захватывающим приключением!<br><br><ul class="bb_ul"><li><strong>Реалистичное обращение с оружием:</strong> С помощью контроллеров движения в виртуальной реальности воспользуйтесь более чем 25 видами оружия, выполняя реалистичные движения. Предупреждайте нападения, контролируйте боезапас и используйте прицел, чтобы разнести своих врагов на неупокоенные кусочки.<br></li><li><strong>Полномасштабная кампания:</strong> В игре, выстроенной из небольших фрагментов виртуальной реальности, составляющих целое повествование, вы можете проходить миссии с перерывами или же пройти весь путь до конца.<br></li><li><strong>Свобода исследования:</strong> Перемещайтесь без ограничений, чтобы исследовать самые различные впечатляющие объекты на юго-западе Америки, включая вероломные каньоны и глубокие темные шахты.<br></li><li><strong>Симулятор выживания среди зомби с полным эффектом присутствия:</strong> Исследуйте окружающий мир, чтобы найти что-либо полезное, забирайте трофеи у вражеской нежити, рационально используйте боезапас и расходные материалы в этой битве на выживание, обеспечивающей еще более полный эффект присутствия благодаря виртуальной реальности.<br></li><li><strong>Совместная многопользовательская игра:</strong> Объединяйте усилия с другом в совместной кампании или многопользовательском режиме &quot;Орда&quot;, где могут принять участие до четырех игроков одновременно, но не забывайте: чем больше теплых мозгов, тем больше прожорливой нежити.<br></li><li><strong>Беспрецедентный реализм виртуальной реальности:</strong> С Intel® Core™ i7 или аналогичным процессором &quot;Солнечная Аризона&quot; привносит беспрецедентный реализм в игровую виртуальную реальность благодаря возможности расчленения враждебных зомби, разрушения объектов игрового мира и эффекту кинематографического погружения в атмосферу игры.<br></li><li><strong>Только в виртуальной реальности:</strong> &quot;Солнечная Аризона&quot; - это шутер, созданный исключительно для виртуальной реальности. Прочувствуйте зомби-апокалипсис, как если бы вы действительно оказались в самом эпицентре событий, и сражайтесь с нежитью, как никогда раньше.</li></ul>
                 </div>
             </div>
         </div>
@@ -92,18 +80,19 @@
         <div id="games" name="games">
             <div class="container">
                 <div id="gameList" class="row">
-                    <!-- <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-md-6 col-xl-4">
                         <div class="d-flex flex-column align-items-end justify-content-between p-3 block">
                             <div class="Portfolio wrapper">
                                 <a href="https://store.steampowered.com/app/342180/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/342180/header.jpg?t=1563533235">
                                 </a>
-                                <div id="slide"><a class="game_info" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="Arizona Sunshine"><img src="img/icons8-info-50.png" class="icon" alt=""></a></div>
-                                
+                                <div id="slide">
+                                    <a class="game_info" href="#" data-toggle="modal" data-target="#ID" data-whatever="Arizona Sunshine">
+                                        <img src="img/icons8-info-50.png" class="icon" alt="">
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div> -->
-                    
-                    
+                    </div>
                 </div>
                 <div class="show_more text-center">
                     <button id="show_more" type="button" class="btn btn-outline-dark">Показать еще</button>
