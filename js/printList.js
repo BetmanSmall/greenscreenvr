@@ -1,5 +1,5 @@
-var count_show = parseInt($('#show_more').attr('count_show'));
-var count_add = parseInt($('#show_more').attr('count_add'));
+var count_show = 0;
+// var count_add = parseInt($('#show_more').attr('count_add'));
 var arr_steamID = [];
 var arr_nonSteamID = [];
 var keyData = "data";
@@ -15,16 +15,39 @@ function showGameCard(steamId) {
             if (steamId != null) {
                 $('#gameList').append(
                     '<div class="col-12 col-md-6 col-xl-4">' +
-                    '<div class="d-flex flex-column align-items-end justify-content-between p-3 block">' +
-                    '<div class="Portfolio"><a href="https://store.steampowered.com/app/' + steamId + '/">' +
-                    '<img class="card-img" src="' + dataApi[steamId][keyData].header_image + '">' +
-                    '</a><div class="desc">' + dataApi[steamId][keyData].name +
-                    '</div>' +
+                        '<div class="d-flex flex-column align-items-end justify-content-between p-3 block">' +
+                            '<div class="Portfolio wrapper">' +
+                                '<a href="https://store.steampowered.com/app/' + steamId + '/">' +
+                                '<img class="card-img" src="' + dataApi[steamId][keyData].header_image + '">' +
+                                '<div id="slide">'+
+                                    '<a class="game_info" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="'+dataApi[steamId][keyData].name+'"><img src="img/icons8-info-50.png" class="icon" alt=""></a>'+
+                                '</div>' +
+                            '</div>'+
+                        '</div>'+
                     '</div>'
                 )
                 count_show++;
             } else { console.log("steamId == null"); }
             console.log("steamId: " + steamId + "\n header_image: " + dataApi[steamId][keyData].header_image + "\n name: " + dataApi[steamId][keyData].name);
+        },
+        error: function(jqXHR, exception) {
+            var msg = '';
+            if (jqXHR.status === 0) {
+                msg = 'Not connect.\n Verify Network.';
+            } else if (jqXHR.status == 404) {
+                msg = 'Requested page not found. [404]';
+            } else if (jqXHR.status == 500) {
+                msg = 'Internal Server Error [500].';
+            } else if (exception === 'parsererror') {
+                msg = 'Requested JSON parse failed.';
+            } else if (exception === 'timeout') {
+                msg = 'Time out error.';
+            } else if (exception === 'abort') {
+                msg = 'Ajax request aborted.';
+            } else {
+                msg = 'Uncaught Error.\n' + jqXHR.responseText;
+            }
+            console.log(msg);
         }
     });
 }
@@ -51,17 +74,20 @@ $(document).ready(function() {
                 }
                 // Здесь нужно отсеять не стим игры...
             }
-            arr_steamID.forEach(function(item, index, array) {
-                console.log(item, index);
-            });
-            for (var i = 0; i < count_add; i++) {
+            // arr_steamID.forEach(function(item, index, array) {
+            //     console.log(item, index);
+            // });
+            for (var i = 0; i < 6; i++) {
                 showGameCard(arr_steamID[i]);
             }
         } catch (err) { console.log(err); }
     });
 });
 $('#show_more').click(function() {
-    for (var i = 0; i < count_add; i++) {
+    for (var i = 0; i < 6; i++) {
         showGameCard(arr_steamID[count_show + i])
+    }
+    if (count_show = arr_steamID.length) {
+        $('#show_more').remove();
     }
 });
