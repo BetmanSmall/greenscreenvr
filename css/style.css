@@ -10,6 +10,7 @@ h2 {
     text-align: center;
     color: white;
 }
+
 main {
     background-color: #131418 !important;
 }
@@ -107,7 +108,7 @@ main {
     /*border: 2px;*/
 }
 
-#price td{
+#price td {
     border-left: 2px solid red;
     border-right: 2px solid red;
 }
@@ -227,17 +228,25 @@ header .overlay {
     top: 0;
 }
 
-#games{
+#games {
     padding-top: 1px;
 }
 
-.footer-color{
+.footer-color {
     background-color: #131418 !important;
 }
-.footer-copyright{
+
+.footer-copyright {
     background-color: #212121 !important;
 }
-#map iframe{
+
+#map iframe {
     width: 100%;
     /*height: 100%;*/
+}
+
+hr {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }

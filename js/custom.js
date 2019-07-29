@@ -13,3 +13,9 @@ $(function() {
 //   // modal.find('.modal-title').text(recipient)
 //   console.log(recipient);
 // })
+$('.nav-link, .navbar-brand, .new-button').click(function() {
+    var sectionTo = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(sectionTo).offset().top-100
+    }, 1000);
+});
