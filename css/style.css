@@ -240,10 +240,6 @@ header .overlay {
     background-color: #212121 !important;
 }
 
-#contacts iframe {
-    width: 100%;
-}
-
 hr {
     height: 10px;
     border: 0;
