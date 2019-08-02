@@ -17,6 +17,7 @@ main {
 
 .navbar a {
     color: white;
+    float: right;
 }
 
 .navbar-nav {
@@ -47,7 +48,6 @@ main {
 }
 
 .Portfolio {
-
     margin: 5px;
     border: 2px solid black;
     border-radius: 5px;
@@ -244,4 +244,8 @@ hr {
     height: 10px;
     border: 0;
     box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.work-time {
+    color: greenyellow;
 }
