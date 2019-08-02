@@ -1,8 +1,8 @@
-body {
+/* body { */
     /*background-color: #131418 !important;*/
     /*font-family: "Helvetica Neue", sans-serif;*/
     /*font-weight: lighter;*/
-}
+/* } */
 
 h2 {
     margin-top: 20px;
@@ -73,10 +73,10 @@ main {
     z-index: 200;
 }
 
-.Portfolio:hover .game_info {
+/* .Portfolio:hover .game_info { */
     /*visibility: visible;*/
-    /*opacity: 1;*/
-}
+    /* opacity: 1; */
+/* } */
 
 .Portfolio img {
     width: 100%;
@@ -104,9 +104,9 @@ main {
     right: 45%;
 }
 
-.show_more-input {
+/* .show_more-input { */
     /*border: 2px;*/
-}
+/* } */
 
 #price td {
     border-left: 2px solid red;
@@ -198,16 +198,16 @@ header .overlay {
   }
   header video {
     display: none;
-  }*/
-}
-
+  }
+}*/
+/*
 .wrapper {
     position: relative;
     overflow: hidden;
     width: 100px;
     height: 100px;
     border: 1px solid black;
-}
+}*/
 
 #slide {
     visibility: hidden;

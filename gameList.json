@@ -1,418 +1,421 @@
 [
     {
-        "steamId": "364630",
-        "gameName": "AirMech_Command",
-        "gameRate": "0.4",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "364630",
+        "name": "AirMech_Command",
+        "game_rate": "0.4",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "342180",
-        "gameName": "Arizona_Sunshine",
-        "gameRate": "0.7",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "342180",
+        "name": "Arizona_Sunshine",
+        "game_rate": "0.7",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "620980",
-        "gameName": "Beat_Saber",
-        "gameRate": "0.9",
-        "gameMP": "false",
-        "gameMR": "true"
+        "steam_appid": "620980",
+        "name": "Beat_Saber",
+        "game_rate": "0.9",
+        "game_mp": "false",
+        "game_mr": "true"
     },
     {
-        "steamId": "533970",
-        "gameName": "Blocks_by_Google",
-        "gameRate": "0.7",
-        "gameMP": "false",
-        "gameMR": "true"
+        "steam_appid": "533970",
+        "name": "Blocks_by_Google",
+        "game_rate": "0.7",
+        "game_mp": "false",
+        "game_mr": "true"
     },
     {
-        "steamId": "522020",
-        "gameName": "Blue_Effect_VR",
-        "gameRate": "0.2",
-        "gameMP": "false",
-        "gameMR": "true"
+        "steam_appid": "522020",
+        "name": "Blue_Effect_VR",
+        "game_rate": "0.2",
+        "game_mp": "false",
+        "game_mr": "true"
     },
     {
-        "steamId": "400940",
-        "gameName": "Budget_Cuts",
-        "gameRate": "0.2",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "400940",
+        "name": "Budget_Cuts",
+        "game_rate": "0.2",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "525640",
-        "gameName": "Bullets_And_More_VR__BAM_VR",
-        "gameRate": "0.2",
-        "gameMP": "true",
-        "gameMR": "true"
+        "steam_appid": "525640",
+        "name": "Bullets_And_More_VR__BAM_VR",
+        "game_rate": "0.2",
+        "game_mp": "true",
+        "game_mr": "true"
     },
     {
-        "steamId": "587470",
-        "gameName": "Chroma_Lab",
-        "gameRate": "0.8",
-        "gameMP": "false",
-        "gameMR": "true"
+        "steam_appid": "587470",
+        "name": "Chroma_Lab",
+        "game_rate": "0.8",
+        "game_mp": "false",
+        "game_mr": "true"
     },
     {
-        "steamId": "520010",
-        "gameName": "Climbey",
-        "gameRate": "0.7",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "520010",
+        "name": "Climbey",
+        "game_rate": "0.7",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "963930",
-        "gameName": "Contractors",
-        "gameRate": "0.8",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "963930",
+        "name": "Contractors",
+        "game_rate": "0.8",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "503770",
-        "gameName": "Elven_Assassin",
-        "gameRate": "0.9",
-        "gameMP": "true",
-        "gameMR": "true"
+        "steam_appid": "503770",
+        "name": "Elven_Assassin",
+        "game_rate": "0.9",
+        "game_mp": "true",
+        "game_mr": "true"
     },
     {
-        "steamId": "512080",
-        "gameName": "Fancy_Skiing_VR",
-        "gameRate": "1",
-        "gameMP": "false",
-        "gameMR": "true"
+        "steam_appid": "512080",
+        "name": "Fancy_Skiing_VR",
+        "game_rate": "1",
+        "game_mp": "false",
+        "game_mr": "true"
     },
     {
-        "steamId": "611660",
-        "gameName": "Fallout_4_VR",
-        "gameRate": "0.8",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "611660",
+        "name": "Fallout_4_VR",
+        "game_rate": "0.8",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "348250",
-        "gameName": "Google_Earth_VR",
-        "gameRate": "0.8",
-        "gameMP": "false",
-        "gameMR": "false"
+        "name": "Google_Earth_VR",
+        "steam_appid": "348250",
+		"detailed_description" : "Google Earth VR lets you explore the world from totally new perspectives in virtual reality. Stroll the streets of Tokyo, soar over the Grand Canyon, or walk around the Eiffel Tower. This virtual reality app lets you see the world\u2019s cities, landmarks, and natural wonders. You can fly over a city, stand at the top of the highest peaks, and even soar into space. Earth VR comes with cinematic tours and hand-picked destinations that send you to the Amazon River, the Manhattan skyline, the Grand Canyon, the Swiss Alps, and more.",
+		"about_the_game" : "Google Earth VR lets you explore the world from totally new perspectives in virtual reality. Stroll the streets of Tokyo, soar over the Grand Canyon, or walk around the Eiffel Tower. This virtual reality app lets you see the world\u2019s cities, landmarks, and natural wonders. You can fly over a city, stand at the top of the highest peaks, and even soar into space. Earth VR comes with cinematic tours and hand-picked destinations that send you to the Amazon River, the Manhattan skyline, the Grand Canyon, the Swiss Alps, and more.",
+		"short_description" : "Google Earth VR lets you explore the world from totally new perspectives in virtual reality. Stroll the streets of Tokyo, soar over the Grand Canyon, or walk around the Eiffel Tower.",
+		"header_image": "https://steamcdn-a.akamaihd.net/steam/apps/348250/header.jpg?t\u003d1550545170",
+        "game_rate": "0.8",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "578620",
-        "gameName": "GORN",
-        "gameRate": "0.8",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "578620",
+        "name": "GORN",
+        "game_rate": "0.8",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "716260",
-        "gameName": "GunsnStories_Preface_VR",
-        "gameRate": "0.5",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "716260",
+        "name": "GunsnStories_Preface_VR",
+        "game_rate": "0.5",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "512270",
-        "gameName": "Home__A_VR_Spacewalk",
-        "gameRate": "0.5",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "512270",
+        "name": "Home__A_VR_Spacewalk",
+        "game_rate": "0.5",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "448280",
-        "gameName": "Job_Simulator",
-        "gameRate": "0.7",
-        "gameMP": "false",
-        "gameMR": "true"
+        "steam_appid": "448280",
+        "name": "Job_Simulator",
+        "game_rate": "0.7",
+        "game_mp": "false",
+        "game_mr": "true"
     },
     {
-        "steamId": "382000",
-        "gameName": "Mindshow",
-        "gameRate": "0.2",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "382000",
+        "name": "Mindshow",
+        "game_rate": "0.2",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "468700",
-        "gameName": "NVIDIA_VR_Funhouse",
-        "gameRate": "0.2",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "468700",
+        "name": "NVIDIA_VR_Funhouse",
+        "game_rate": "0.2",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "496240",
-        "gameName": "Onward",
-        "gameRate": "0.6",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "496240",
+        "name": "Onward",
+        "game_rate": "0.6",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "555160",
-        "gameName": "Pavlov_VR",
-        "gameRate": "0.6",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "555160",
+        "name": "Pavlov_VR",
+        "game_rate": "0.6",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "218620",
-        "gameName": "PAYDAY_2",
-        "gameRate": "0.3",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "218620",
+        "name": "PAYDAY_2",
+        "game_rate": "0.3",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "446750",
-        "gameName": "Portal_Stories_VR",
-        "gameRate": "0.4",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "446750",
+        "name": "Portal_Stories_VR",
+        "game_rate": "0.4",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "234630",
-        "gameName": "Project_CARS",
-        "gameRate": "0.5",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "234630",
+        "name": "Project_CARS",
+        "game_rate": "0.5",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "471710",
-        "gameName": "Rec_Room",
-        "gameRate": "0.6",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "471710",
+        "name": "Rec_Room",
+        "game_rate": "0.6",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "555880",
-        "gameName": "Sairento_VR",
-        "gameRate": "0.5",
-        "gameMP": "true",
-        "gameMR": "true"
+        "steam_appid": "555880",
+        "name": "Sairento_VR",
+        "game_rate": "0.5",
+        "game_mp": "true",
+        "game_mr": "true"
     },
     {
-        "steamId": "567670",
-        "gameName": "Serious_Sam_3_VR_BFE",
-        "gameRate": "0.7",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "567670",
+        "name": "Serious_Sam_3_VR_BFE",
+        "game_rate": "0.7",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "564310",
-        "gameName": "Serious_Sam_Fusion_2017_beta",
-        "gameRate": "0.9",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "564310",
+        "name": "Serious_Sam_Fusion_2017_beta",
+        "game_rate": "0.9",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "552450",
-        "gameName": "Serious_Sam_VR_The_First_Encounter",
-        "gameRate": "0.7",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "552450",
+        "name": "Serious_Sam_VR_The_First_Encounter",
+        "game_rate": "0.7",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "465240",
-        "gameName": "Serious_Sam_VR_The_Last_Hope",
-        "gameRate": "0.8",
-        "gameMP": "true",
-        "gameMR": "true"
+        "steam_appid": "465240",
+        "name": "Serious_Sam_VR_The_Last_Hope",
+        "game_rate": "0.8",
+        "game_mp": "true",
+        "game_mr": "true"
     },
     {
-        "steamId": "552460",
-        "gameName": "Serious_Sam_VR_The_Second_Encounter",
-        "gameRate": "0.7",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "552460",
+        "name": "Serious_Sam_VR_The_Second_Encounter",
+        "game_rate": "0.7",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "530350",
-        "gameName": "Smashbox_Arena",
-        "gameRate": "0.5",
-        "gameMP": "true",
-        "gameMR": "true"
+        "steam_appid": "530350",
+        "name": "Smashbox_Arena",
+        "game_rate": "0.5",
+        "game_mp": "true",
+        "game_mr": "true"
     },
     {
-        "steamId": "647590",
-        "gameName": "Space_Junkies",
-        "gameRate": "0.6",
-        "gameMP": "true",
-        "gameMR": "true"
+        "steam_appid": "647590",
+        "name": "Space_Junkies",
+        "game_rate": "0.6",
+        "game_mp": "true",
+        "game_mr": "true"
     },
     {
-        "steamId": "418650",
-        "gameName": "Space_Pirate_Trainer",
-        "gameRate": "0.7",
-        "gameMP": "false",
-        "gameMR": "true"
+        "steam_appid": "418650",
+        "name": "Space_Pirate_Trainer",
+        "game_rate": "0.7",
+        "game_mp": "false",
+        "game_mr": "true"
     },
     {
-        "steamId": "645480",
-        "gameName": "SpiderMan_Homecoming__Virtual_Reality_Experience",
-        "gameRate": "0.4",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "645480",
+        "name": "SpiderMan_Homecoming__Virtual_Reality_Experience",
+        "game_rate": "0.4",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "1067800",
-        "gameName": "SpiderMan_Far_From_Home_Virtual_Reality",
-        "gameRate": "0.5",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "1067800",
+        "name": "SpiderMan_Far_From_Home_Virtual_Reality",
+        "game_rate": "0.5",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "748370",
-        "gameName": "STAND_OUT__VR_Battle_Royale",
-        "gameRate": "0.7",
-        "gameMP": "true",
-        "gameMR": "true"
+        "steam_appid": "748370",
+        "name": "STAND_OUT__VR_Battle_Royale",
+        "game_rate": "0.7",
+        "game_mp": "true",
+        "game_mr": "true"
     },
     {
-        "steamId": "617830",
-        "gameName": "SUPERHOT_VR",
-        "gameRate": "0.7",
-        "gameMP": "false",
-        "gameMR": "true"
+        "steam_appid": "617830",
+        "name": "SUPERHOT_VR",
+        "game_rate": "0.7",
+        "game_mp": "false",
+        "game_mr": "true"
     },
     {
-        "steamId": "440630",
-        "gameName": "The_Brookhaven_Experiment",
-        "gameRate": "0.4",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "440630",
+        "name": "The_Brookhaven_Experiment",
+        "game_rate": "0.4",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "611670",
-        "gameName": "The_Elder_Scrolls_V_Skyrim_VR",
-        "gameRate": "0.7",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "611670",
+        "name": "The_Elder_Scrolls_V_Skyrim_VR",
+        "game_rate": "0.7",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "450390",
-        "gameName": "The_Lab",
-        "gameRate": "0.4",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "450390",
+        "name": "The_Lab",
+        "game_rate": "0.4",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "552440",
-        "gameName": "The_Talos_Principle_VR",
-        "gameRate": "0.3",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "552440",
+        "name": "The_Talos_Principle_VR",
+        "game_rate": "0.3",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "327140",
-        "gameName": "Tilt_Brush",
-        "gameRate": "0.6",
-        "gameMP": "false",
-        "gameMR": "true"
+        "steam_appid": "327140",
+        "name": "Tilt_Brush",
+        "game_rate": "0.6",
+        "game_mp": "false",
+        "game_mr": "true"
     },
     {
-        "steamId": "509250",
-        "gameName": "TO_THE_TOP",
-        "gameRate": "0.4",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "509250",
+        "name": "TO_THE_TOP",
+        "game_rate": "0.4",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "494960",
-        "gameName": "Twisted_Arrow",
-        "gameRate": "0.4",
-        "gameMP": "false",
-        "gameMR": "true"
+        "steam_appid": "494960",
+        "name": "Twisted_Arrow",
+        "game_rate": "0.4",
+        "game_mp": "false",
+        "game_mr": "true"
     },
     {
-        "steamId": "438100",
-        "gameName": "VRChat",
-        "gameRate": "0.6",
-        "gameMP": "true",
-        "gameMR": "true"
+        "steam_appid": "438100",
+        "name": "VRChat",
+        "game_rate": "0.6",
+        "game_mp": "true",
+        "game_mr": "true"
     },
     {
-        "steamId": "236390",
-        "gameName": "War_Thunder",
-        "gameRate": "0.5",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "236390",
+        "name": "War_Thunder",
+        "game_rate": "0.5",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "681390",
-        "gameName": "ZomDay",
-        "gameRate": "0.7",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "681390",
+        "name": "ZomDay",
+        "game_rate": "0.7",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "headerImgURL": "http://i1.wp.com/www.vivecraft.org/wp-content/uploads/2016/07/wesYwME.png",
+        "header_image": "http://i1.wp.com/www.vivecraft.org/wp-content/uploads/2016/07/wesYwME.png",
         "url": "http://www.vivecraft.org",
-        "gameName": "Vivecraft(Minecraft)",
-        "gameRate": "0.9",
-        "gameMP": "true",
-        "gameMR": "true"
+        "name": "Vivecraft(Minecraft)",
+        "game_rate": "0.9",
+        "game_mp": "true",
+        "game_mr": "true"
     },
     {
-        "steamId": "908520",
-        "gameName": "fpsVR",
-        "gameRate": "0.1",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "908520",
+        "name": "fpsVR",
+        "game_rate": "0.1",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "755540",
-        "gameName": "LIV",
-        "gameRate": "0.1",
-        "gameMP": "false",
-        "gameMR": "true"
+        "steam_appid": "755540",
+        "name": "LIV",
+        "game_rate": "0.1",
+        "game_mp": "false",
+        "game_mr": "true"
     },
     {
-        "steamId": "457550",
-        "gameName": "Bigscreen_Beta",
-        "gameRate": "0.2",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "457550",
+        "name": "Bigscreen_Beta",
+        "game_rate": "0.2",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "365670",
-        "gameName": "Blender",
-        "gameRate": "0.3",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "365670",
+        "name": "Blender",
+        "game_rate": "0.3",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "570",
-        "gameName": "Dota_2",
-        "gameRate": "0.2",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "570",
+        "name": "Dota_2",
+        "game_rate": "0.2",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "steamId": "4000",
-        "gameName": "Garrys_Mod",
-        "gameRate": "0.1",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "4000",
+        "name": "Garrys_Mod",
+        "game_rate": "0.1",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "70",
-        "gameName": "HalfLife",
-        "gameRate": "0.2",
-        "gameMP": "true",
-        "gameMR": "false"
+        "steam_appid": "70",
+        "name": "HalfLife",
+        "game_rate": "0.2",
+        "game_mp": "true",
+        "game_mr": "false"
     },
     {
-        "steamId": "504650",
-        "gameName": "MasterpieceVR",
-        "gameRate": "0.1",
-        "gameMP": "false",
-        "gameMR": "false"
+        "steam_appid": "504650",
+        "name": "MasterpieceVR",
+        "game_rate": "0.1",
+        "game_mp": "false",
+        "game_mr": "false"
     },
     {
-        "headerImgURL": "https://i.ytimg.com/vi/JKO9fEjNiio/maxresdefault.jpg",
+        "header_image": "https://i.ytimg.com/vi/JKO9fEjNiio/maxresdefault.jpg",
         "url": "https://docs.unrealengine.com/en-US/Engine/Editor/VR/index.html",
-        "gameName": "UnrealEngine_VRMod",
-        "gameRate": "0.1",
-        "gameMP": "false",
-        "gameMR": "false"
+        "name": "UnrealEngine_VRMod",
+        "game_rate": "0.1",
+        "game_mp": "false",
+        "game_mr": "false"
     }
 ]
-

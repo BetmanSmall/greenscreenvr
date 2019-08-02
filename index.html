@@ -68,19 +68,6 @@
             <div class="container">
                 <h2>Игры</h2>
                 <div id="gameList" class="row">
-                    <!-- <div class="col-12 col-md-6 col-xl-4">
-                        <div class="d-flex flex-column align-items-end justify-content-between p-3 block">
-                            <div class="Portfolio wrapper">
-                                <a href="https://store.steampowered.com/app/342180/"><img class="card-img" src="https://steamcdn-a.akamaihd.net/steam/apps/342180/header.jpg?t=1563533235">
-                                </a>
-                                <div id="slide">
-                                    <a class="game_info" href="#" data-toggle="modal" data-target="#d123" data-whatever="Arizona Sunshine">
-                                        <img src="img/icons8-info-50.png" class="icon" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
                 <div class="show_more text-center">
                     <button id="show_more" type="button" class="btn btn-outline-dark">Показать еще</button>
@@ -162,7 +149,9 @@
         <div id="contacts" name="contacts">
             <div class="container-fluid">
                 <h2>Контакты</h2>
-                <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=4230094451" height="500" width="100%" allowfullscreen="true"></iframe>
+                <div style="height: 300px; width: 90%; margin: 0 auto;" id="map-wrap">
+                    <iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=4230094451" height="100%" width="100%" frameborder="0" allowfullscreen="true"></iframe>
+                </div>
             </div>
         </div>
     </main>
@@ -195,7 +184,7 @@
                     <a href="https://vk.com/gsvrs" class="btn btn-social-icon btn-lg btn-vk">
                         <span class="fa fa-vk"></span>
                     </a>
-                    <a href="https://www.instagram.com/greenscreenvr/" class="btn btn-social-icon btn-lg btn-instagram ">
+                    <a href="https://www.instagram.com/greenscreenvr/" class="btn btn-social-icon btn-lg btn-instagram">
                         <span class="fa fa-instagram "></span>
                     </a>
                 </div>
@@ -205,8 +194,8 @@
         </div>
         <!-- Footer Links -->
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        <div class="footer-copyright text-center py-1">© 2019 GreenScreenVR:
+            <a href="https://greenscreenvr.ru"> GreenScreenVR.ru</a>
         </div>
         <!-- Copyright -->
     </footer>
@@ -216,7 +205,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/printList.js"></script>
+    <!-- <script src="js/printList.js"></script> -->
+    <script src="js/add_applications.js"></script>
 </body>
 
 </html>
