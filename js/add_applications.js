@@ -59,48 +59,25 @@ function addGameCard(gameData) {
             '<div class="modal-content">' +
             '<div class="modal-header">' +
             '<h4 class="modal-title">' + gameData.name + '</h4>' +
+            '<div class="divWithIcons" id="divWithIcons' + steam_appid + '">'+
+            '</div>'+
             '<button type="button" class="close" data-dismiss="modal">×</button>' +
             '</div>' +
             '<div class="modal-body">' +
-            ' <div id="myCarousel" class="carousel slide" data-ride="carousel">' +
-            '  <ol class="carousel-indicators">' +
-            '    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>' +
-            '    <li data-target="#myCarousel" data-slide-to="1"></li>' +
-            '    <li data-target="#myCarousel" data-slide-to="2"></li>' +
-            '  </ol>' +
-            '  <div class="carousel-inner">' +
-            '    <div class="item active">' +
-            '      <img src="img/slider.png" alt="Los Angeles" style="width:100%;">' +
-            '      <div class="carousel-caption">' +
-            '        <h3>Los Angeles</h3>' +
-            '        <p>LA is always so much fun!</p>' +
-            '      </div>' +
-            '    </div> ' +
-            '    <div class="item">' +
-            '      <img src="img/slider.png" alt="Chicago" style="width:100%;">' +
-            '      <div class="carousel-caption">' +
-            '        <h3>Chicago</h3>' +
-            '        <p>Thank you, Chicago!</p>' +
-            '      </div>' +
-            '    </div>' +
-            '    <div class="item">' +
-            '      <img src="img/slider.png" alt="New York" style="width:100%;">' +
-            '      <div class="carousel-caption">' +
-            '        <h3>New York</h3>' +
-            '        <p>We love the Big Apple!</p>' +
-            '      </div>' +
-            '    </div>' +
-            '  </div>' +
-            '  <a class="left carousel-control" href="#myCarousel" data-slide="prev">' +
-            '    <span class="glyphicon glyphicon-chevron-left"></span>' +
-            '    <span class="sr-only">Previous</span>' +
-            '  </a>' +
-            '  <a class="right carousel-control" href="#myCarousel" data-slide="next">' +
-            '    <span class="glyphicon glyphicon-chevron-right"></span>' +
-            '    <span class="sr-only">Next</span>' +
-            '  </a>' +
-            '</div>' +
-            '</div>' +
+            '<div id="carouselInModal' + steam_appid + '" class="carousel slide carousel-fade" data-ride="carousel">'+
+            '<ol class="carousel-indicators" id="cImOL' + steam_appid + '">' +
+            '</ol>' +
+            '<div class="carousel-inner" role="listbox" id="cImDIV' + steam_appid + '">'+
+            '</div>'+
+            '<a class="carousel-control-prev" href="#carouselInModal' + steam_appid + '" role="button" data-slide="prev">'+
+            '    <span class="carousel-control-prev-icon" aria-hidden="true"></span>'+
+            '    <span class="sr-only">Previous</span>'+
+            '</a>'+
+            '<a class="carousel-control-next" href="#carouselInModal' + steam_appid + '" role="button" data-slide="next">'+
+            '    <span class="carousel-control-next-icon" aria-hidden="true"></span>'+
+            '    <span class="sr-only">Next</span>'+
+            '</a>'+
+            '</div>'+
             gameData.short_description +
             '</div>' +
             '<div class="modal-footer">' +
@@ -109,6 +86,38 @@ function addGameCard(gameData) {
             '</div>' +
             '</div>'
         )
+        for (var m = 0; m < gameData.movies.length; m++) {
+            $('#cImDIV' + steam_appid).append(
+                '    <div class="carousel-item' + ((m==0) ? (' active\"'):'') + '>'+
+                '        <video class="video-fluid w-100" autoplay loop muted>' +
+                '            <source src="' + gameData.movies[m].webm.max + '" type="video/webm" />' +
+                '        </video>' +
+                '    </div>'
+            )
+            $('#cImOL' + steam_appid).append(
+                '<li data-target="#carouselInModal' + steam_appid + '" data-slide-to="'+(m)+'"' + ((m==0)?('class=\"active\"'):'') + '></li>'
+            )
+        }
+        for (var s = 0; s < gameData.screenshots.length; s++) {
+            $('#cImDIV' + steam_appid).append(
+                '    <div class="carousel-item">'+
+                '    <img class="d-block w-100" src="' + gameData.screenshots[s].path_thumbnail + '">'+
+                '    </div>'
+            )
+            $('#cImOL' + steam_appid).append(
+                '<li data-target="#carouselInModal' + steam_appid + '" data-slide-to="'+(gameData.movies.length+m)+'"></li>'
+            )
+        }
+        if (gameData.game_mr) {
+            $('#divWithIcons' + steam_appid).append(
+                '<img class="mrMPicons" src="img/mr.svg" title="Смешанная реальность"/>'
+            )
+        }
+        if (gameData.game_mp) {
+            $('#divWithIcons' + steam_appid).append(
+                '<img class="mrMPicons" src="img/multiplayer.svg" title="Игра поддерживает мультиплеер"/>'
+            )
+        }
         addedCount++;
     }
 }

@@ -249,3 +249,16 @@ hr {
 .work-time {
     color: greenyellow;
 }
+
+.divWithIcons {
+    /* align-self: right; */
+    
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: space-between; */
+}
+
+.mrMPicons {
+    text-align: right;
+    width: 15%;
+}

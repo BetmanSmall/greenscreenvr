@@ -28,3 +28,7 @@ document.addEventListener('click', function(e) {
         map.style.pointerEvents = 'none'
     }
 })
+
+$('.carousel').carousel({
+    touch: true // default
+})
