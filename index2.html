@@ -1,52 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <div class="container">
-        <ul class="nav nav-pills nav-stacked">
-          <li><a href="#lightbox" data-toggle="modal">Open Lightbox</a></li>
-          <li><a href="#lightbox" data-toggle="modal" data-slide-to="1">2nd Image</a></li>
-          <li><a href="#lightbox" data-toggle="modal" data-slide-to="2">3rd Image</a></li>
-          <li><a href="#lightbox" data-toggle="modal" data-slide-to="15">Open non existing Image</a></li>
-        </ul>
-        <div class="modal fade and carousel slide" id="lightbox">
-          <div class="modal-dialog">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <header class="header">
+        <div class="overlay">
+            <video autoplay="autoplay" muted="muted" loop="loop">
+                <source src="videos/banner.mp4" type="video/mp4">
+            </video>
+            <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <h1 class="display-3">GreenScreen VR studio</h1>
+                        <p class="lead mb-0">Клуб виртуальной реальности</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="games" name="games">
+            <div class="container">
+                <h2>Игры</h2>
+                <div id="gameList" class="row">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#m499">Launch demo modal</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#m500">Launch demo modal</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#m501">Launch demo modal1</button>
+                </div>
+                <div class="show_more text-center">
+                    <button id="show_more" type="button" class="btn btn-outline-dark">Показать еще</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="m499" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="btn btn-primary popover-ex" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="Popover title" data-content="Text"><img src="img/icons8-info-50.png" class="icon" alt=""></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/add_applications.js"></script>
+
+    <div class="modal fade" id="m500" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
-              <div class="modal-body">
-                <ol class="carousel-indicators">
-                  <li data-target="#lightbox" data-slide-to="0" class="active"></li>
-                  <li data-target="#lightbox" data-slide-to="1"></li>
-                  <li data-target="#lightbox" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="http://placehold.it/900x500/777/" alt="First slide">
-                  </div>
-                  <div class="item">
-                    <img src="http://placehold.it/900x500/666/" alt="Second slide">
-                  </div>
-                  <div class="item">
-                    <img src="http://placehold.it/900x500/555/" alt="Third slide">
-                    <div class="carousel-caption"><p>even with captions...</p></div>
-                  </div>
-                </div><!-- /.carousel-inner -->
-                <a class="left carousel-control" href="#lightbox" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#lightbox" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-              </div><!-- /.modal-body -->
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-      </div><!-- /.container -->
-</body>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="btn btn-primary popover-ex" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="Popover title" data-content="Text"><img src="img/mr.svg" width="50%" class="d-inline-block align-top" alt=""></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="m501" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="btn btn-primary popover-ex" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="Popover title" data-content="Text"><img src="img/coop.svg" width="50%" class="d-inline-block align-top" alt=""></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,337 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body class="modal-open" style="padding-right: 16px;">
+    <header class="header">
+        <div class="overlay">
+            <video autoplay="autoplay" muted="muted" loop="loop">
+                <source src="videos/banner.mp4" type="video/mp4">
+            </video>
+            <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <h1 class="display-3">GreenScreen VR studio</h1>
+                        <p class="lead mb-0">Клуб виртуальной реальности</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="games" name="games">
+            <div class="container">
+                <h2>Игры</h2>
+                <div id="gameList" class="row">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#m499">Launch demo
+                        modal</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#m500">Launch demo
+                        modal</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#m501">Launch demo
+                        modal1</button>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="d-flex flex-column align-items-end justify-content-between p-3 block">
+                            <div class="Portfolio wrapper"><img class="card-img"
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/364630/header.jpg?t=1525216422">
+                                <div id="slide"><a class="game_info" href="#" data-toggle="modal"
+                                        data-target="#m364630"><img src="img/icons8-info-50.png" class="icon"
+                                            alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="d-flex flex-column align-items-end justify-content-between p-3 block">
+                            <div class="Portfolio wrapper"><img class="card-img"
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/342180/header.jpg?t=1563533235">
+                                <div id="slide"><a class="game_info" href="#" data-toggle="modal"
+                                        data-target="#m342180"><img src="img/icons8-info-50.png" class="icon"
+                                            alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="d-flex flex-column align-items-end justify-content-between p-3 block">
+                            <div class="Portfolio wrapper"><img class="card-img"
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/620980/header.jpg?t=1564132675">
+                                <div id="slide"><a class="game_info" href="#" data-toggle="modal"
+                                        data-target="#m620980"><img src="img/icons8-info-50.png" class="icon"
+                                            alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="d-flex flex-column align-items-end justify-content-between p-3 block">
+                            <div class="Portfolio wrapper"><img class="card-img"
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/533970/header.jpg?t=1507251190">
+                                <div id="slide"><a class="game_info" href="#" data-toggle="modal"
+                                        data-target="#m533970"><img src="img/icons8-info-50.png" class="icon"
+                                            alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="d-flex flex-column align-items-end justify-content-between p-3 block">
+                            <div class="Portfolio wrapper"><img class="card-img"
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/522020/header.jpg?t=1510745405">
+                                <div id="slide"><a class="game_info" href="#" data-toggle="modal"
+                                        data-target="#m522020"><img src="img/icons8-info-50.png" class="icon"
+                                            alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="d-flex flex-column align-items-end justify-content-between p-3 block">
+                            <div class="Portfolio wrapper"><img class="card-img"
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/400940/header.jpg?t=1560862004">
+                                <div id="slide"><a class="game_info" href="#" data-toggle="modal"
+                                        data-target="#m400940"><img src="img/icons8-info-50.png" class="icon"
+                                            alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="show_more text-center">
+                    <button id="show_more" type="button" class="btn btn-outline-dark">Показать еще</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="m499" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="btn btn-primary popover-ex" data-container="body"
+                            data-toggle="popover" data-placement="bottom" data-trigger="focus" title=""
+                            data-content="Text" data-original-title="Popover title"><img src="img/icons8-info-50.png"
+                                class="icon" alt=""></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/add_applications.js"></script>
+
+    <div class="modal fade" id="m500" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="btn btn-primary popover-ex" data-container="body" data-toggle="popover"
+                        data-placement="bottom" data-trigger="focus" title="" data-content="Text"
+                        data-original-title="Popover title"><img src="img/mr.svg" width="50%"
+                            class="d-inline-block align-top" alt=""></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="m501" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="btn btn-primary popover-ex" data-container="body" data-toggle="popover"
+                        data-placement="bottom" data-trigger="focus" title="" data-content="Text"
+                        data-original-title="Popover title"><img src="img/coop.svg" width="50%"
+                            class="d-inline-block align-top" alt=""></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+
+    <div class="modal fade show" id="m364630" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        style="padding-right: 16px; display: block;">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">AirMech Command</h5> <button type="button"
+                        class="btn btn-primary popover-ex" data-container="body" data-toggle="popover"
+                        data-placement="bottom" data-trigger="focus" title="Popover title" data-content="Text"><img
+                            src="img/icons8-info-50.png" class="icon" alt=""></button> <button type="button"
+                        class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body"> </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="m342180" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Arizona Sunshine</h5> <button type="button"
+                        class="btn btn-primary popover-ex" data-container="body" data-toggle="popover"
+                        data-placement="bottom" data-trigger="focus" title="Popover title" data-content="Text"><img
+                            src="img/icons8-info-50.png" class="icon" alt=""></button> <button type="button"
+                        class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body"> </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="m620980" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Beat Saber</h5> <button type="button"
+                        class="btn btn-primary popover-ex" data-container="body" data-toggle="popover"
+                        data-placement="bottom" data-trigger="focus" title="Popover title" data-content="Text"><img
+                            src="img/icons8-info-50.png" class="icon" alt=""></button> <button type="button"
+                        class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body"> </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="m533970" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Blocks by Google</h5> <button type="button"
+                        class="btn btn-primary popover-ex" data-container="body" data-toggle="popover"
+                        data-placement="bottom" data-trigger="focus" title="Popover title" data-content="Text"><img
+                            src="img/icons8-info-50.png" class="icon" alt=""></button> <button type="button"
+                        class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body"> </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="m522020" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Blue Effect VR</h5> <button type="button"
+                        class="btn btn-primary popover-ex" data-container="body" data-toggle="popover"
+                        data-placement="bottom" data-trigger="focus" title="Popover title" data-content="Text"><img
+                            src="img/icons8-info-50.png" class="icon" alt=""></button> <button type="button"
+                        class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body"> </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="m400940" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Budget Cuts</h5> <button type="button"
+                        class="btn btn-primary popover-ex" data-container="body" data-toggle="popover"
+                        data-placement="bottom" data-trigger="focus" title="Popover title" data-content="Text"><img
+                            src="img/icons8-info-50.png" class="icon" alt=""></button> <button type="button"
+                        class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body"> </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+</body>
+
+</html>

@@ -22,13 +22,27 @@ $('.nav-link, .navbar-brand, .new-button').click(function() {
 
 document.addEventListener('click', function(e) {
     var map = document.querySelector('#map-wrap iframe')
-    if(e.target.id === 'map-wrap') {
-        map.style.pointerEvents = 'all'
-    } else {
-        map.style.pointerEvents = 'none'
+    if (map != null) {
+        if(e.target.id === 'map-wrap') {
+            map.style.pointerEvents = 'all'
+        } else {
+            map.style.pointerEvents = 'none'
+        }
     }
 })
 
 $('.carousel').carousel({
     touch: true // default
+})
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+$(function () {
+    $('.popover-ex').popover({
+        container: 'body'
+    })
+})
+$('.popover-dismiss').popover({
+    trigger: 'focus'
 })
