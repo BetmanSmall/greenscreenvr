@@ -258,7 +258,11 @@ hr {
         /* justify-content: space-between; */
 }
 
-.mrMPicons {
-    text-align: right;
-    width: 15%;
+.modal-title {
+    margin: 0 auto;
 }
+
+/* .mrMPicons { */
+    /* text-align: right; */
+    /* width: 15%; */
+/* } */

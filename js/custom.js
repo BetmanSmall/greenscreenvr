@@ -4,6 +4,7 @@ $(function() {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 });
+
 // $('.modal').click('show.bs.modal', function (event) {
 //   var button = $(event.relatedTarget) // Button that triggered the modal
 //   var recipient = button.data('target') // Extract info from data-* attributes
@@ -12,7 +13,9 @@ $(function() {
 //   // var modal = $(this)
 //   // modal.find('.modal-title').text(recipient)
 //   console.log(recipient);
+//   console.log(event);
 // })
+
 $('.nav-link, .navbar-brand, .new-button').click(function() {
     var sectionTo = $(this).attr('href');
     $('html, body').animate({
@@ -31,18 +34,18 @@ document.addEventListener('click', function(e) {
     }
 })
 
-$('.carousel').carousel({
-    touch: true // default
-})
+// $('.carousel').carousel({
+//     touch: true // default
+// })
 
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-})
-$(function () {
-    $('.popover-ex').popover({
-        container: 'body'
-    })
-})
-$('.popover-dismiss').popover({
-    trigger: 'focus'
-})
+// $(function () {
+//     $('[data-toggle="tooltip"]').tooltip()
+// })
+// $(function () {
+//     $('.popover-ex').popover({
+//         container: 'body'
+//     })
+// })
+// $('.popover-dismiss').popover({
+//     trigger: 'focus'
+// })
