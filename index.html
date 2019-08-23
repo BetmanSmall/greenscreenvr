@@ -37,6 +37,9 @@
 
         <meta name="yandex-verification" content="d38b2747a7199330" />
         <meta name="google-site-verification" content="WpYKQFIAlz3QIYblz6rhZYLHAdxJXwgeBTszbiwP_pQ" />
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
@@ -72,9 +75,13 @@
 
         <header>
             <div class="overlay"></div>
-                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="img/poster.jpg">
+                <video class="fullsize" playsinline autoplay muted loop poster="img/poster.jpg">
                     <source type="video/mp4" src="videos/banner1080.mp4"/>
                     <source type="video/webm" src="videos/banner1080.webm"/>
+                </video>
+                <video class="mobile" playsinline autoplay muted loop poster="img/poster.jpg">
+                    <source type="video/mp4" src="videos/banner480.mp4"/>
+                    <source type="video/webm" src="videos/banner480.webm"/>
                 </video>
             <div class="container h-100">
                 <div class="d-flex h-100 text-center align-items-center">
@@ -226,11 +233,11 @@
                             <h5>Ежедневно</h5>
                         </div>
                         <div class="pt-4">
-                            <a class="btn btn-outline-light btn-social" href="https://vk.com/gsvrs">
+                            <a class="btn btn-outline-light btn-social btn-vk" href="//vk.com/gsvrs">
                                 <i class="fab fa-fw fa-vk"></i>
                             </a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/greenscreenvr/">
-                                <i class="fab fa-fw fa-instagram "></i>
+                            <a class="btn btn-outline-light btn-social btn-instagram" href="//www.instagram.com/greenscreenvr/">
+                                <i class="fab fa-fw fa-instagram"></i>
                             </a>
                         </div>
                     </div>
@@ -246,17 +253,15 @@
             </div>
         </footer>
 
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
         <!-- <script src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script> -->
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script> -->
 
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/custom.js"></script>
         <script src="js/add_applications.js"></script>
+        <script src="js/custom.js"></script>
     </body>
 </html>
