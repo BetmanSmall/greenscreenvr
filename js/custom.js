@@ -1,25 +1,30 @@
 $(function() {
     $(document).scroll(function() {
         var $nav = $(".navbar.fixed-top");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        var $divNavCollapse = $("div.navbar-collapse");
+        if (!$divNavCollapse.hasClass("show")) {
+            if ($(this).scrollTop() == 0) {
+                $nav.removeClass('scrolled');
+            } else {
+                $nav.addClass('scrolled');
+            }
+        } else {
+            $nav.addClass('scrolled');
+        }
     });
 });
 
-// $('.modal').click('show.bs.modal', function (event) {
-//   var button = $(event.relatedTarget) // Button that triggered the modal
-//   var recipient = button.data('target') // Extract info from data-* attributes
-//   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-//   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-//   // var modal = $(this)
-//   // modal.find('.modal-title').text(recipient)
-//   console.log(recipient);
-//   console.log(event);
-// })
+$('button.navbar-toggler').click(function() {
+    var $nav = $(".navbar.fixed-top");
+    if ($(document).scrollTop() == 0) {
+        $nav.toggleClass('scrolled');
+    }
+});
 
 $('.nav-link, .navbar-brand, .new-button').click(function() {
     var sectionTo = $(this).attr('href');
     $('html, body').animate({
-      scrollTop: $(sectionTo).offset().top-100
+      scrollTop: $(sectionTo).offset().top-50
     }, 1000);
 });
 
@@ -33,19 +38,3 @@ document.addEventListener('click', function(e) {
         }
     }
 })
-
-// $('.carousel').carousel({
-//     touch: true // default
-// })
-
-// $(function () {
-//     $('[data-toggle="tooltip"]').tooltip()
-// })
-// $(function () {
-//     $('.popover-ex').popover({
-//         container: 'body'
-//     })
-// })
-// $('.popover-dismiss').popover({
-//     trigger: 'focus'
-// })

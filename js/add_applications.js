@@ -1,6 +1,7 @@
 
 var dataGames = [];
 var addedCount = 0;
+var globalVolume = 0.1;
 
 $(document).ready(function() {
     $.ajax({
@@ -17,18 +18,13 @@ $(document).ready(function() {
 
 $('#show_more').click(function() {
     var willGames = addedCount;
-    for (var i = 0; i < 6; i++) {
+    for (var i = 0; i < 9; i++) {
         addGameCard(dataGames[willGames + i])
     }
     if (addedCount == dataGames.length) {
         $('#show_more').remove();
     }
-
-    $('.carousel').carousel({
-        touch: true,
-        interval: 1000
-    })
-
+    
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
@@ -40,25 +36,7 @@ $('#show_more').click(function() {
     $('.popover-dismiss').popover({
         trigger: 'focus'
     })
-    var videos = document.querySelectorAll("video.d-block");
-    videos.forEach(function(e) {
-        e.addEventListener('ended', videoEnded, false);
-        e.addEventListener('play', videoPlay, false);
-    });
 });
-
-function videoEnded(e) {
-    var carouselID = e.currentTarget.parentElement.parentElement.parentElement.getAttribute("id");
-    $("#"+carouselID).carousel('next');
-    $('#'+carouselID).carousel();
-    console.log("ended");
-}
-
-function videoPlay(e) {
-    var carouselID = e.currentTarget.parentElement.parentElement.parentElement.getAttribute("id");
-    $('#'+carouselID).carousel('pause');
-    console.log("play-pause");
-}
 
 function addGameCard(gameData) {
     if (gameData) {
@@ -68,10 +46,7 @@ function addGameCard(gameData) {
             '   <div class="d-flex flex-column align-items-end justify-content-between p-3 block">' +
             '       <a class="game_info" href="#" data-toggle="modal" data-target="#m' + steam_appid + '">'+
             '           <div class="Portfolio wrapper">' +
-            '           <img class="card-img" src="' + gameData.header_image + '">' +
-            // '<div id="slide">' +
-            // '<a class="game_info" href="#" data-toggle="modal" data-target="#m' + steam_appid + '"><img src="img/icons8-info-50.png" class="icon" alt=""></a>' +
-            // '</div>' +
+            '               <img class="card-img" src="' + gameData.header_image + '">' +
             '           </div>' +
             '       </a>'+
             '   </div>' +
@@ -88,7 +63,6 @@ function addGameCard(gameData) {
             '       </div>' +
             '       <div class="modal-body">' +
             '           <div id="carouselInModal' + steam_appid + '" class="carousel slide carousel-fade" data-ride="carousel">'+
-            // '               <ol class="carousel-indicators" id="cImOL' + steam_appid + '"></ol>' +
             '               <div class="carousel-inner" role="listbox" id="cImDIV' + steam_appid + '"></div>'+
             '               <a class="carousel-controls carousel-control-prev" href="#carouselInModal' + steam_appid + '" role="button" data-slide="prev">'+
             '                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>'+
@@ -98,6 +72,7 @@ function addGameCard(gameData) {
             '                   <span class="carousel-control-next-icon" aria-hidden="true"></span>'+
             '                   <span class="sr-only">Next</span>'+
             '               </a>'+
+            '               <ol class="carousel-indicators" id="cImOL' + steam_appid + '"></ol>' +
             '           </div>'+
             gameData.short_description +
             '       </div>' +
@@ -109,28 +84,6 @@ function addGameCard(gameData) {
             '  </div>' +
             '</div>'
         )
-        for (var m = 0; m < gameData.movies.length; m++) {
-            $('#cImDIV' + steam_appid).append(
-                '<div class="carousel-item' + ((m==0) ? (' active'):'') + '\">'+
-                '    <video id="video'+m+'_'+steam_appid+'" class="d-block video-fluid w-100" controls>' +
-                '        <source src="' + gameData.movies[m].webm.max + '" type="video/webm" />' +
-                '    </video>' +
-                '</div>'
-            )
-            // $('#cImOL' + steam_appid).append(
-            //     '<li data-target="#carouselInModal' + steam_appid + '" data-slide-to="'+(m)+'"' + ((m==0)?('class=\"active'):'') + '\"></li>'
-            // )
-        }
-        for (var s = 0; s < gameData.screenshots.length; s++) {
-            $('#cImDIV' + steam_appid).append(
-                '<div class="carousel-item">'+
-                '    <img class="d-block w-100" src="' + gameData.screenshots[s].path_thumbnail + '">'+
-                '</div>'
-            )
-            // $('#cImOL' + steam_appid).append(
-            //     '<li data-target="#carouselInModal' + steam_appid + '" data-slide-to="'+(gameData.movies.length+m)+'"></li>'
-            // )
-        }
         if (gameData.game_mr) {
             $('#divWithIcons' + steam_appid).append(
                 '<button type="button" class="btn btn-success btn-circle popover-ex" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="Смешанная реальность" data-content="Данная игра поддерживает съемку при помощи технологии хромакей"><img src="img/mr.svg" height="30px" class="icon" alt=""></button>'
@@ -143,21 +96,104 @@ function addGameCard(gameData) {
         }
         addedCount++;
 
+        $('#carouselInModal'+steam_appid).carousel({
+            // touch: true,
+            interval: 2500
+        })
+        $('#carouselInModal'+steam_appid).on('slide.bs.carousel', function (e) {
+            var carouselInner = e.target.querySelector(".carousel-inner");
+            if (carouselInner.childElementCount != 0) {
+                var childrens = e.target.firstElementChild.children;
+                var lastVideo = childrens.item(e.from).querySelector("video");
+                // console.log(lastVideo);
+                if (lastVideo != null) {
+                    lastVideo.pause();
+                }
+                // console.log(e);
+                var carouselID = e.target.getAttribute("id");
+                var nextVideo = childrens.item(e.to).querySelector("video");
+                // console.log(nextVideo);
+                if (nextVideo != null) {
+                    // $("#"+carouselID).carousel('pause');
+                    nextVideo.play();
+                    // console.log(carouselID + " pause!");
+                } else {
+                    // $('#'+carouselID).carousel();
+                    // console.log(carouselID + " resume!");
+                }
+            }
+        });
+
         $("#m"+steam_appid).on('hidden.bs.modal', function (e) {
-            var videos = document.getElementById(e.currentTarget.getAttribute('id')).querySelectorAll("video.d-block");
+            var videos = document.getElementById(e.target.getAttribute('id')).querySelectorAll("video");
             videos.forEach(function(v) {
                 v.pause();
             });
-        })
+        });
 
         $("#m"+steam_appid).on('shown.bs.modal', function (e) {
-            var carouselItemActive = e.currentTarget.querySelector(".carousel-item.active");
+            var carouselInner = e.target.querySelector(".carousel-inner");
+            if (carouselInner.childElementCount == 0) {
+                // console.log("#m"+steam_appid + " init!");
+                for (var m = 0; m < gameData.movies.length; m++) {
+                    $('#cImDIV' + steam_appid).append(
+                        '<div class="carousel-item' + ((m==0) ? (' active'):'') + '\">'+
+                        '    <video id="video'+m+'_'+steam_appid+'" class="d-block video-fluid w-100" controls playsinline poster="' + gameData.movies[m].thumbnail + '">' +
+                        '        <source src="' + gameData.movies[m].webm.low + '.mp4" type="video/mp4" />' +
+                        // '        <source src="' + gameData.movies[m].webm.max + '.mp4" type="video/mp4" data-quality="hd"/>' +
+                        '        <source src="' + gameData.movies[m].webm.low + '.webm" type="video/webm" />' +
+                        // '        <source src="' + gameData.movies[m].webm.max + '.webm" type="video/webm" data-quality="hd"/>' +
+                        '    </video>' +
+                        '</div>'
+                    )
+                    $('#cImOL' + steam_appid).append(
+                        '<li data-target="#carouselInModal' + steam_appid + '" data-slide-to="'+(m)+'"' + ((m==0)?('class=\"active'):'') + '\"></li>'
+                    )
+                }
+                for (var s = 0; s < gameData.screenshots.length; s++) {
+                    $('#cImDIV' + steam_appid).append(
+                        '<div class="carousel-item' + ((gameData.movies.length==0) && (s==0) ? (' active'):'') + '\">'+
+                        '    <img class="d-block w-100" src="' + gameData.screenshots[s].path_thumbnail + '">'+
+                        '</div>'
+                    )
+                    $('#cImOL' + steam_appid).append(
+                        '<li data-target="#carouselInModal' + steam_appid + '" data-slide-to="'+(gameData.movies.length+s)+'"></li>'
+                    )
+                }
+                var videos = document.getElementById('carouselInModal'+steam_appid).querySelectorAll("video");
+                videos.forEach(function(e) {
+                    e.addEventListener('ended', videoEnded, false);
+                    e.addEventListener('play', videoPlay, false);
+                    e.addEventListener('volumechange', videoVolumechange, false);
+                });
+            }
+            var carouselItemActive = e.target.querySelector(".carousel-item.active");
             var video = carouselItemActive.querySelector("video");
-            video.play();
-        })
-
-        // $('#carouselInModal'+steam_appid).on('slide.bs.carousel', function (e) {
-        //     console.log(e.currentTarget);
-        // });
+            if (video != null) {
+                video.play();
+            }
+        });
     }
+}
+
+function videoEnded(e) {
+    var carouselID = e.path[3].getAttribute("id");
+    $("#"+carouselID).carousel('next');
+    // $('#'+carouselID).carousel();
+    // console.log("in " + carouselID + " videoEnded!:");
+    // console.log(e);
+}
+
+function videoPlay(e) {
+    var carouselID = e.path[3].getAttribute("id");
+    $('#'+carouselID).carousel('pause');
+    e.target.volume = globalVolume;
+    // console.log("in " + carouselID + " videoPlay!:");
+    // console.log(e);
+}
+
+function videoVolumechange(e) {
+    globalVolume = e.target.volume;
+    // console.log("videoVolumechange!");
+    // console.log(e);
 }
