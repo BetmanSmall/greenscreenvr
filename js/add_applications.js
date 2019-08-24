@@ -64,6 +64,8 @@ function addGameCard(gameData) {
             '       <div class="modal-body">' +
             '           <div id="carouselInModal' + steam_appid + '" class="carousel slide carousel-fade" data-ride="carousel">'+
             '               <div class="carousel-inner" role="listbox" id="cImDIV' + steam_appid + '"></div>'+
+            '               <ol class="carousel-indicators" id="cImOL' + steam_appid + '"></ol>' +
+            '           </div>'+
             '               <a class="carousel-controls carousel-control-prev" href="#carouselInModal' + steam_appid + '" role="button" data-slide="prev">'+
             '                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>'+
             '                   <span class="sr-only">Previous</span>'+
@@ -72,8 +74,6 @@ function addGameCard(gameData) {
             '                   <span class="carousel-control-next-icon" aria-hidden="true"></span>'+
             '                   <span class="sr-only">Next</span>'+
             '               </a>'+
-            '               <ol class="carousel-indicators" id="cImOL' + steam_appid + '"></ol>' +
-            '           </div>'+
             gameData.short_description +
             '       </div>' +
             // '       <div class="modal-footer">' +
@@ -97,7 +97,7 @@ function addGameCard(gameData) {
         addedCount++;
 
         $('#carouselInModal'+steam_appid).carousel({
-            // touch: true,
+            touch: true,
             interval: 2500
         })
         $('#carouselInModal'+steam_appid).on('slide.bs.carousel', function (e) {
@@ -118,7 +118,7 @@ function addGameCard(gameData) {
                     nextVideo.play();
                     // console.log(carouselID + " pause!");
                 } else {
-                    // $('#'+carouselID).carousel();
+                    $('#'+carouselID).carousel();
                     // console.log(carouselID + " resume!");
                 }
             }
@@ -163,6 +163,7 @@ function addGameCard(gameData) {
                 var videos = document.getElementById('carouselInModal'+steam_appid).querySelectorAll("video");
                 videos.forEach(function(e) {
                     e.addEventListener('ended', videoEnded, false);
+                    // e.addEventListener('pause', videoPause, false);
                     e.addEventListener('play', videoPlay, false);
                     e.addEventListener('volumechange', videoVolumechange, false);
                 });
@@ -179,10 +180,16 @@ function addGameCard(gameData) {
 function videoEnded(e) {
     var carouselID = e.path[3].getAttribute("id");
     $("#"+carouselID).carousel('next');
-    // $('#'+carouselID).carousel();
+    $('#'+carouselID).carousel();
     // console.log("in " + carouselID + " videoEnded!:");
     // console.log(e);
 }
+
+// function videoPause(e) {
+    // var carouselID = e.path[3].getAttribute("id");
+    // console.log("in " + carouselID + " videoPause!:");
+    // console.log(e);
+// }
 
 function videoPlay(e) {
     var carouselID = e.path[3].getAttribute("id");
@@ -194,6 +201,6 @@ function videoPlay(e) {
 
 function videoVolumechange(e) {
     globalVolume = e.target.volume;
-    // console.log("videoVolumechange!");
+    // console.log("videoVolumechange!:" + globalVolume);
     // console.log(e);
 }

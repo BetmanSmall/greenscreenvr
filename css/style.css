@@ -314,7 +314,11 @@ hr {
 }
 
 .carousel-controls {
-    height: 80%;
+    /* padding-top: 200px; */
+    /* position:  */
+    /* size: 20%; */
+    width: 10%;
+    height: 15%;
 }
 
 .carousel-item {
