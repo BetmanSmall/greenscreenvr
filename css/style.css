@@ -119,8 +119,16 @@ footer {
     padding-bottom: 10px;
 }
 
+.display-7 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 10px;
+}
+
 #price table {
-    font-size: 2.5vmin;
+    /* font-size: 2.5vmin; */
+    font-size: 3vmin;
     margin: auto;
     width: 100%;
     border-collapse: collapse;
@@ -248,10 +256,12 @@ footer {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12);
+    transition: box-shadow 100ms linear;
 }
 
 .Portfolio img:hover {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);	
+    transition: box-shadow 100ms linear;
 }
 
 .desc {
@@ -317,8 +327,15 @@ hr {
     /* padding-top: 200px; */
     /* position:  */
     /* size: 20%; */
+    top: 10%;
     width: 10%;
-    height: 15%;
+    height: 5%;
+}
+.carousel-control-prev {
+    left: 5%;
+}
+.carousel-control-next {
+    right: 5%;
 }
 
 .carousel-item {
@@ -346,6 +363,11 @@ hr {
 
 .show_more {
 	padding-top: 20px;
+}
+
+#games .col-md-6 {
+	padding-right: 0;
+	padding-left: 0;
 }
 
 /* GAMES */
