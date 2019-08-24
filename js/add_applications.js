@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 $('#show_more').click(function() {
     var willGames = addedCount;
-    for (var i = 0; i < 9; i++) {
+    for (var i = 0; i < 6; i++) {
         addGameCard(dataGames[willGames + i])
     }
     if (addedCount == dataGames.length) {
