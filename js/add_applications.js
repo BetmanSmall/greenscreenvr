@@ -98,7 +98,7 @@ function addGameCard(gameData) {
 
         $('#carouselInModal'+steam_appid).carousel({
             touch: true,
-            interval: 2500
+            interval: 10000
         })
         $('#carouselInModal'+steam_appid).on('slide.bs.carousel', function (e) {
             var carouselInner = e.target.querySelector(".carousel-inner");
@@ -107,15 +107,23 @@ function addGameCard(gameData) {
                 var lastVideo = childrens.item(e.from).querySelector("video");
                 // console.log(lastVideo);
                 if (lastVideo != null) {
-                    lastVideo.pause();
+                    var isVideoPlaying = !!(lastVideo.currentTime > 0 && !lastVideo.paused && !lastVideo.ended && lastVideo.readyState > 2);
+                    // console.log(isVideoPlaying);
+                    if (isVideoPlaying) {
+                        lastVideo.pause();
+                    }
                 }
                 // console.log(e);
                 var carouselID = e.target.getAttribute("id");
                 var nextVideo = childrens.item(e.to).querySelector("video");
                 // console.log(nextVideo);
                 if (nextVideo != null) {
+                    var isVideoPlaying = !!(nextVideo.currentTime > 0 && !nextVideo.paused && !nextVideo.ended && nextVideo.readyState > 2);
+                    // console.log(isVideoPlaying);
                     // $("#"+carouselID).carousel('pause');
-                    nextVideo.play();
+                    if (!isVideoPlaying) {
+                        nextVideo.play();
+                    }
                     // console.log(carouselID + " pause!");
                 } else {
                     $('#'+carouselID).carousel();
@@ -163,7 +171,7 @@ function addGameCard(gameData) {
                 var videos = document.getElementById('carouselInModal'+steam_appid).querySelectorAll("video");
                 videos.forEach(function(e) {
                     e.addEventListener('ended', videoEnded, false);
-                    // e.addEventListener('pause', videoPause, false);
+                    e.addEventListener('pause', videoPause, false);
                     e.addEventListener('play', videoPlay, false);
                     e.addEventListener('volumechange', videoVolumechange, false);
                 });
@@ -180,16 +188,16 @@ function addGameCard(gameData) {
 function videoEnded(e) {
     var carouselID = e.path[3].getAttribute("id");
     $("#"+carouselID).carousel('next');
-    $('#'+carouselID).carousel();
+    // $('#'+carouselID).carousel();
     // console.log("in " + carouselID + " videoEnded!:");
     // console.log(e);
 }
 
-// function videoPause(e) {
-    // var carouselID = e.path[3].getAttribute("id");
-    // console.log("in " + carouselID + " videoPause!:");
+function videoPause(e) {
+    var carouselID = e.path[3].getAttribute("id");
+    console.log("in " + carouselID + " videoPause!:");
     // console.log(e);
-// }
+}
 
 function videoPlay(e) {
     var carouselID = e.path[3].getAttribute("id");
