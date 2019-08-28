@@ -9,11 +9,11 @@ body {
 }
 
 .navbar-brand {
-	padding: 0px !important;
+    padding: 0px !important;
 }
 
 .navbar-brand img {
-	height: 80px;
+    height: 80px;
     transition: height 200ms linear;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .scrolled .navbar-brand img {
-	height: 40px;
+    height: 40px;
     transition: height 200ms linear;
 }
 
@@ -36,56 +36,56 @@ body {
 }
 
 header {
-	position: relative;
-	background-color: black;
-	height: 100vh;
-	min-height: 25rem;
-	width: 100%;
-	overflow: hidden;
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
 }
 
 header video {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: 0;
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
 header .container {
-	position: relative;
-	z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 header .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background-color: black;
-	opacity: 0.6;
-	z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
 }
 
 video.mobile {
-	display: none;
+    display: none;
 }
 
 @media (pointer: coarse) and (hover: none) {
-	video.fullsize {
-		display: none;
-	}
-	video.mobile {
-		display: block;
-	}
+    video.fullsize {
+        display: none;
+    }
+    video.mobile {
+        display: block;
+    }
 }
 
 .display-5, .lead {
@@ -208,25 +208,25 @@ footer {
     align-items: center;
     margin-left: .5rem!important;
     margin-right: .5rem!important;
-	/* color: #fff; */
+    /* color: #fff; */
     text-shadow: none;
 }
 
 .btn-vk {
-	background: #4680C2;
+    background: #4680C2;
 }
 
 .btn-instagram {
-	background: #AA01EB;
-	background: -webkit-radial-gradient(bottom left, #FF9901, #AA01EB);
-	background: -moz-radial-gradient(bottom left, #FF9901, #AA01EB);
-	background: radial-gradient(to top right, #FF9901, #AA01EB);
+    background: #AA01EB;
+    background: -webkit-radial-gradient(bottom left, #FF9901, #AA01EB);
+    background: -moz-radial-gradient(bottom left, #FF9901, #AA01EB);
+    background: radial-gradient(to top right, #FF9901, #AA01EB);
 }
 
-.btn-vk:hover, .btn-instagram:hover {	
-	background: #fff!important;
-	/* color: #fff; */
-	/* opacity: 0.7; */
+.btn-vk:hover, .btn-instagram:hover {    
+    background: #fff!important;
+    /* color: #fff; */
+    /* opacity: 0.7; */
 }
 
 .copyright {
@@ -260,7 +260,7 @@ footer {
 }
 
 .Portfolio img:hover {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);	
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);    
     transition: box-shadow 100ms linear;
 }
 
@@ -319,61 +319,36 @@ hr {
     margin: 0 auto;
 }
 
-.carousel {
-    padding-bottom: 12px;
+.carousel-indicators {
+    top: 0;
+    max-height: 25px;
+}
+
+.carousel-control-next-icon {
+    padding-right: 30px;
+}
+
+.carousel-control-prev-icon {
+    padding-left: 30px;
 }
 
 .carousel-controls {
-    /* padding-top: 200px; */
-    /* position:  */
-    /* size: 20%; */
-    top: 60px;
-    width: 20px;
-    height: 20px;
-}
-.carousel-control-prev {
-    left: 30px;
-}
-.carousel-control-next {
-    right: 30px;
+    top: 50%;
+    margin: -15px;
 }
 
-/* .carousel-item { */
-    /* height: 350px; */
-/* } */
-
-/* .carousel-indicators li { */
-    /* width: 10px; */
-    /* height: 10px; */
-    /* border-radius: 100%; */
-/* } */
-
-.carousel-indicators {
-    top: 0px;
+.carousel-control-next-icon, .carousel-control-prev-icon, .carousel-controls {
+    /* width: 30px; */
+    height: 30px;
 }
 
-/* .carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
-} */
+.modal-body-description {
+    padding-top: 12px;
+}
 
-/* .carousel-control-next-icon:after {
-  content: '>';
-  font-size: 55px;
-  color: red;
-} */
-
-/* .carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: red;
-} */
+#text {
+    padding-top: 12px;
+}
 
 .btn-circle {
     text-align: center;
@@ -385,12 +360,12 @@ hr {
 }
 
 .show_more {
-	padding-top: 20px;
+    padding-top: 20px;
 }
 
 #games .col-md-6 {
-	padding-right: 0;
-	padding-left: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 /* GAMES */

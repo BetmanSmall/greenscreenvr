@@ -76,7 +76,9 @@ function addGameCard(gameData) {
             '                   <span class="sr-only">Next</span>'+
             '               </a>'+
             '           </div>'+
-            gameData.short_description +
+            '           <div class="modal-body-description">' +
+                            gameData.short_description +
+            '           </div>' +
             '       </div>' +
             // '       <div class="modal-footer">' +
             // '           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>'+
@@ -185,6 +187,10 @@ function addGameCard(gameData) {
             var video = carouselItemActive.querySelector("video");
             if (video != null) {
                 video.play();
+            } else {
+                var carousel = e.target.querySelector("div.carousel");
+                var carouselID = carousel.getAttribute("id");
+                timerId = setInterval(carouselNextSlide, intervalTime, carouselID);
             }
         });
     }
