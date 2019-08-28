@@ -21,6 +21,13 @@ $('button.navbar-toggler').click(function() {
     }
 });
 
+$('.nav-item').on('click', function() {
+    var $divNavCollapse = $("div.navbar-collapse");
+    if ($divNavCollapse.hasClass("show")) {
+        $divNavCollapse.removeClass('show');
+    }
+});
+
 $('.nav-link, .navbar-brand, .new-button').click(function() {
     var sectionTo = $(this).attr('href');
     $('html, body').animate({

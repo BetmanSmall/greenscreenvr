@@ -2,8 +2,8 @@
 var dataGames = [];
 var addedCount = 0;
 var globalVolume = 0.1;
-// var intervalTime = 2500;
-// var timerId;
+var intervalTime = 2500;
+var timerId;
 
 $(document).ready(function() {
     $.ajax({
@@ -119,6 +119,7 @@ function addGameCard(gameData) {
                 var carouselID = e.target.getAttribute("id");
                 var nextVideo = childrens.item(e.to).querySelector("video");
                 // console.log(nextVideo);
+                clearInterval(timerId);
                 if (nextVideo != null) {
                     var isVideoPlaying = !!(nextVideo.currentTime > 0 && !nextVideo.paused && !nextVideo.ended && nextVideo.readyState > 2);
                     // console.log(isVideoPlaying);
@@ -129,13 +130,14 @@ function addGameCard(gameData) {
                     // console.log(carouselID + " pause!");
                 } else {
                     // $('#'+carouselID).carousel();
-                    // timerId = setInterval(carouselNextSlide, intervalTime, carouselID);
+                    timerId = setInterval(carouselNextSlide, intervalTime, carouselID);
                     // console.log(carouselID + " resume! id:" + timerId);
                 }
             }
         });
 
         $("#m"+steam_appid).on('hidden.bs.modal', function (e) {
+            clearInterval(timerId);
             var videos = document.getElementById(e.target.getAttribute('id')).querySelectorAll("video");
             videos.forEach(function(v) {
                 v.pause();
@@ -208,9 +210,9 @@ function videoPause(e) {
 }
 
 function videoPlay(e) {
-    // clearTimeout(timerId);
+    clearInterval(timerId);
     // console.log("clear-timerId:" + timerId);
-    var carouselID = e.path[3].getAttribute("id");
+    // var carouselID = e.path[3].getAttribute("id");
     // $('#'+carouselID).carousel('pause');
     e.target.volume = globalVolume;
     // console.log("in " + carouselID + " videoPlay!:");
