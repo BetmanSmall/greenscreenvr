@@ -2,6 +2,8 @@
 var dataGames = [];
 var addedCount = 0;
 var globalVolume = 0.1;
+// var intervalTime = 2500;
+// var timerId;
 
 $(document).ready(function() {
     $.ajax({
@@ -65,7 +67,6 @@ function addGameCard(gameData) {
             '           <div id="carouselInModal' + steam_appid + '" class="carousel slide carousel-fade" data-ride="carousel">'+
             '               <div class="carousel-inner" role="listbox" id="cImDIV' + steam_appid + '"></div>'+
             '               <ol class="carousel-indicators" id="cImOL' + steam_appid + '"></ol>' +
-            '           </div>'+
             '               <a class="carousel-controls carousel-control-prev" href="#carouselInModal' + steam_appid + '" role="button" data-slide="prev">'+
             '                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>'+
             '                   <span class="sr-only">Previous</span>'+
@@ -74,6 +75,7 @@ function addGameCard(gameData) {
             '                   <span class="carousel-control-next-icon" aria-hidden="true"></span>'+
             '                   <span class="sr-only">Next</span>'+
             '               </a>'+
+            '           </div>'+
             gameData.short_description +
             '       </div>' +
             // '       <div class="modal-footer">' +
@@ -98,7 +100,7 @@ function addGameCard(gameData) {
 
         $('#carouselInModal'+steam_appid).carousel({
             touch: true,
-            interval: 10000
+            interval: false
         })
         $('#carouselInModal'+steam_appid).on('slide.bs.carousel', function (e) {
             var carouselInner = e.target.querySelector(".carousel-inner");
@@ -126,8 +128,9 @@ function addGameCard(gameData) {
                     }
                     // console.log(carouselID + " pause!");
                 } else {
-                    $('#'+carouselID).carousel();
-                    // console.log(carouselID + " resume!");
+                    // $('#'+carouselID).carousel();
+                    // timerId = setInterval(carouselNextSlide, intervalTime, carouselID);
+                    // console.log(carouselID + " resume! id:" + timerId);
                 }
             }
         });
@@ -185,6 +188,11 @@ function addGameCard(gameData) {
     }
 }
 
+function carouselNextSlide(carouselID) {
+    console.log("carouselNextSlide " + carouselID);
+    $("#"+carouselID).carousel('next');
+}
+
 function videoEnded(e) {
     var carouselID = e.path[3].getAttribute("id");
     $("#"+carouselID).carousel('next');
@@ -200,8 +208,10 @@ function videoPause(e) {
 }
 
 function videoPlay(e) {
+    // clearTimeout(timerId);
+    // console.log("clear-timerId:" + timerId);
     var carouselID = e.path[3].getAttribute("id");
-    $('#'+carouselID).carousel('pause');
+    // $('#'+carouselID).carousel('pause');
     e.target.volume = globalVolume;
     // console.log("in " + carouselID + " videoPlay!:");
     // console.log(e);
