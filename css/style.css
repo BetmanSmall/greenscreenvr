@@ -28,11 +28,11 @@ body {
 }
 
 .nav-link {
-    color: rgba(255,255,255,.9) !important;
+    color: rgba(255, 255, 255, .9) !important;
 }
 
 .nav-link:hover {
-    color: rgba(255,255,255,.5) !important;
+    color: rgba(255, 255, 255, .5) !important;
 }
 
 header {
@@ -94,6 +94,11 @@ video.mobile {
 
 .border {
     border: 10px solid rgba(250, 255, 250, 0.2) !important;
+}
+
+.image-bottom {
+    position: relative;
+    height: 50px;
 }
 
 section {
@@ -206,8 +211,8 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: .5rem!important;
-    margin-right: .5rem!important;
+    margin-left: .5rem !important;
+    margin-right: .5rem !important;
     /* color: #fff; */
     text-shadow: none;
 }
@@ -223,8 +228,8 @@ footer {
     background: radial-gradient(to top right, #FF9901, #AA01EB);
 }
 
-.btn-vk:hover, .btn-instagram:hover {    
-    background: #fff!important;
+.btn-vk:hover, .btn-instagram:hover {
+    background: #fff !important;
     /* color: #fff; */
     /* opacity: 0.7; */
 }
@@ -260,7 +265,7 @@ footer {
 }
 
 .Portfolio img:hover {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);    
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     transition: box-shadow 100ms linear;
 }
 
