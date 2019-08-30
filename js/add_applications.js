@@ -6,15 +6,27 @@ var intervalTime = 2500;
 var timerId;
 
 $(document).ready(function() {
-    $.ajax({
-        'async': false,
-        'global': false,
-        'url': "apps_details.json",
-        'dataType': "json",
-        'success': function (data) {
-            dataGames = data;
-        }
-    });
+    if (Math.random() < 0.5) {
+        $.ajax({
+            'async': false,
+            'global': false,
+            'url': "apps_details.json",
+            'dataType': "json",
+            'success': function (data) {
+                dataGames = data;
+            }
+        });
+    } else {
+        $.ajax({
+            'async': false,
+            'global': false,
+            'url': "apps_details_sort.json",
+            'dataType': "json",
+            'success': function (data) {
+                dataGames = data;
+            }
+        });
+    }
     $("#show_more").click();
 });
 
@@ -43,6 +55,12 @@ $('#show_more').click(function() {
 function addGameCard(gameData) {
     if (gameData) {
         var steam_appid = gameData.steam_appid;
+        // console.log(steam_appid);
+        if (!steam_appid) {
+            steam_appid = gameData.name;
+        }
+        // console.log(steam_appid);
+        // console.log("isNaN:" + isNaN(steam_appid));
         $('#gameList').append(
             '<div class="col-12 col-md-6 col-xl-4">' +
             '   <div class="d-flex flex-column align-items-end justify-content-between p-3 block">' +
@@ -64,6 +82,7 @@ function addGameCard(gameData) {
             '           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
             '       </div>' +
             '       <div class="modal-body">' +
+            // '           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">'+
             '           <div id="carouselInModal' + steam_appid + '" class="carousel slide carousel-fade" data-ride="carousel">'+
             '               <div class="carousel-inner" role="listbox" id="cImDIV' + steam_appid + '"></div>'+
             '               <ol class="carousel-indicators" id="cImOL' + steam_appid + '"></ol>' +
@@ -80,10 +99,10 @@ function addGameCard(gameData) {
                             gameData.short_description +
             '           </div>' +
             '       </div>' +
-            // '       <div class="modal-footer">' +
-            // '           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>'+
-            // '           <button type="button" class="btn btn-primary" onclick="window.location.href=\'https://store.steampowered.com/app/' + steam_appid + '\'">Steam</button>'+
-            // '       </div>' +
+            '       <div class="modal-footer">' +
+            '           <button type="button" class="btn btn-primary" onclick="window.location.href=\'https://store.steampowered.com/app/' + steam_appid + '\'">Steam</button>'+
+            '           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>'+
+            '       </div>' +
             '    </div>' +
             '  </div>' +
             '</div>'
@@ -105,35 +124,46 @@ function addGameCard(gameData) {
             interval: false
         })
         $('#carouselInModal'+steam_appid).on('slide.bs.carousel', function (e) {
-            var carouselInner = e.target.querySelector(".carousel-inner");
-            if (carouselInner.childElementCount != 0) {
-                var childrens = e.target.firstElementChild.children;
-                var lastVideo = childrens.item(e.from).querySelector("video");
-                // console.log(lastVideo);
-                if (lastVideo != null) {
-                    var isVideoPlaying = !!(lastVideo.currentTime > 0 && !lastVideo.paused && !lastVideo.ended && lastVideo.readyState > 2);
-                    // console.log(isVideoPlaying);
-                    if (isVideoPlaying) {
-                        lastVideo.pause();
+            var iframes = e.target.querySelectorAll("iframe");
+            // console.log(iframes);
+            // console.log(iframes.length);
+            if (iframes.length == 0) {
+                var carouselInner = e.target.querySelector(".carousel-inner");
+                if (carouselInner.childElementCount != 0) {
+                    var childrens = e.target.firstElementChild.children;
+                    var lastVideo = childrens.item(e.from).querySelector("video");
+                    // console.log(lastVideo);
+                    if (lastVideo != null) {
+                        var isVideoPlaying = !!(lastVideo.currentTime > 0 && !lastVideo.paused && !lastVideo.ended && lastVideo.readyState > 2);
+                        // console.log(isVideoPlaying);
+                        if (isVideoPlaying) {
+                            lastVideo.pause();
+                        }
+                    }
+                    // console.log(e);
+                    var carouselID = e.target.getAttribute("id");
+                    var nextVideo = childrens.item(e.to).querySelector("video");
+                    // console.log(nextVideo);
+                    clearInterval(timerId);
+                    if (nextVideo != null) {
+                        var isVideoPlaying = !!(nextVideo.currentTime > 0 && !nextVideo.paused && !nextVideo.ended && nextVideo.readyState > 2);
+                        // console.log(isVideoPlaying);
+                        // $("#"+carouselID).carousel('pause');
+                        if (!isVideoPlaying) {
+                            nextVideo.play();
+                        }
+                        // console.log(carouselID + " pause!");
+                    } else {
+                        // $('#'+carouselID).carousel();
+                        timerId = setInterval(carouselNextSlide, intervalTime, carouselID);
+                        // console.log(carouselID + " resume! id:" + timerId);
                     }
                 }
-                // console.log(e);
-                var carouselID = e.target.getAttribute("id");
-                var nextVideo = childrens.item(e.to).querySelector("video");
-                // console.log(nextVideo);
-                clearInterval(timerId);
-                if (nextVideo != null) {
-                    var isVideoPlaying = !!(nextVideo.currentTime > 0 && !nextVideo.paused && !nextVideo.ended && nextVideo.readyState > 2);
-                    // console.log(isVideoPlaying);
-                    // $("#"+carouselID).carousel('pause');
-                    if (!isVideoPlaying) {
-                        nextVideo.play();
-                    }
-                    // console.log(carouselID + " pause!");
-                } else {
-                    // $('#'+carouselID).carousel();
-                    timerId = setInterval(carouselNextSlide, intervalTime, carouselID);
-                    // console.log(carouselID + " resume! id:" + timerId);
+            } else {
+                var childrens = e.target.firstElementChild.children;
+                var lastIframe = childrens.item(e.from).querySelector("iframe");
+                if (lastIframe != null) {
+                    lastIframe.src = lastIframe.src;
                 }
             }
         });
@@ -144,6 +174,12 @@ function addGameCard(gameData) {
             videos.forEach(function(v) {
                 v.pause();
             });
+            var iframes = document.getElementById(e.target.getAttribute('id')).querySelectorAll("iframe");
+            // console.log(iframes);
+            iframes.forEach(function(v) {
+                v.src = v.src;
+                // v.pauseVideo();
+            });
         });
 
         $("#m"+steam_appid).on('shown.bs.modal', function (e) {
@@ -151,16 +187,28 @@ function addGameCard(gameData) {
             if (carouselInner.childElementCount == 0) {
                 // console.log("#m"+steam_appid + " init!");
                 for (var m = 0; m < gameData.movies.length; m++) {
-                    $('#cImDIV' + steam_appid).append(
-                        '<div class="carousel-item' + ((m==0) ? (' active'):'') + '\">'+
-                        '    <video id="video'+m+'_'+steam_appid+'" class="d-block video-fluid w-100" controls playsinline poster="' + gameData.movies[m].thumbnail + '">' +
-                        '        <source src="' + gameData.movies[m].webm.low + '.mp4" type="video/mp4" />' +
-                        // '        <source src="' + gameData.movies[m].webm.max + '.mp4" type="video/mp4" data-quality="hd"/>' +
-                        '        <source src="' + gameData.movies[m].webm.low + '.webm" type="video/webm" />' +
-                        // '        <source src="' + gameData.movies[m].webm.max + '.webm" type="video/webm" data-quality="hd"/>' +
-                        '    </video>' +
-                        '</div>'
-                    )
+                    // console.log("gameData.movies[m].youtube_url:" + gameData.movies[m].youtube_url);
+                    if (!gameData.movies[m].youtube_url) {
+                        $('#cImDIV' + steam_appid).append(
+                            '<div class="carousel-item' + ((m==0) ? (' active'):'') + '\">'+
+                            '    <video id="video_'+m+'_'+steam_appid+'" class="d-block video-fluid w-100" controls playsinline poster="' + gameData.movies[m].thumbnail + '">' +
+                            '        <source src="' + gameData.movies[m].webm.low + '.mp4" type="video/mp4" />' +
+                            // '        <source src="' + gameData.movies[m].webm.max + '.mp4" type="video/mp4" data-quality="hd"/>' +
+                            '        <source src="' + gameData.movies[m].webm.low + '.webm" type="video/webm" />' +
+                            // '        <source src="' + gameData.movies[m].webm.max + '.webm" type="video/webm" data-quality="hd"/>' +
+                            '    </video>' +
+                            '</div>'
+                        )
+                    } else {
+                        $('#cImDIV' + steam_appid).append(
+                            '<div class="carousel-item' + ((m==0) ? (' active'):'') + '\">'+
+                            '   <div class="carousel-video-inner">'+
+                            '       <iframe id="ytplayer" type="text/html" width="100%" height="" src="http://www.youtube.com/embed/' + gameData.movies[m].youtube_url + '" frameborder="0"/>'+
+                            // '       <div class="video-player" id="video-player_'+m+'_'+steam_appid+'" data-video-id="' + gameData.movies[m].youtube_url + '"></div>'+
+                            '   </div>'+
+                            '</div>'
+                        )
+                    }
                     $('#cImOL' + steam_appid).append(
                         '<li data-target="#carouselInModal' + steam_appid + '" data-slide-to="'+(m)+'"' + ((m==0)?('class=\"active'):'') + '\"></li>'
                     )
@@ -181,6 +229,7 @@ function addGameCard(gameData) {
                     e.addEventListener('pause', videoPause, false);
                     e.addEventListener('play', videoPlay, false);
                     e.addEventListener('volumechange', videoVolumechange, false);
+                    // createVideo(e);
                 });
             }
             var carouselItemActive = e.target.querySelector(".carousel-item.active");
@@ -188,9 +237,11 @@ function addGameCard(gameData) {
             if (video != null) {
                 video.play();
             } else {
-                var carousel = e.target.querySelector("div.carousel");
-                var carouselID = carousel.getAttribute("id");
-                timerId = setInterval(carouselNextSlide, intervalTime, carouselID);
+                var iframes = e.target.querySelectorAll("iframe");
+                if (iframes.length == 0) {
+                    var carouselID = e.target.querySelector("div.carousel").getAttribute("id");
+                    timerId = setInterval(carouselNextSlide, intervalTime, carouselID);
+                }
             }
         });
     }
@@ -230,3 +281,62 @@ function videoVolumechange(e) {
     // console.log("videoVolumechange!:" + globalVolume);
     // console.log(e);
 }
+
+// $(function () {
+//     $(".carousel").on("slide.bs.carousel", function (e) {
+//         console.log("carousel(slide.bs.carousel); e:" + e);
+//         console.log(e);
+//         var prev = $(this)
+//             .find(".active")
+//             .index();
+//         console.log(prev);
+//         var next = $(e.relatedTarget).index();
+//         console.log(next);
+//         var video = $(".video-player")[0];
+//         console.log(video);
+//         var videoSlide = $(".video-player")
+//             .closest(".carousel-item")
+//             .index();
+//         if (next === videoSlide) {
+//             if (video.tagName == "IFRAME") {
+//                 player.playVideo();
+//             } else {
+//                 createVideo(video);
+//             }
+//         } else {
+//             if (typeof player !== "undefined") {
+//                 player.pauseVideo();
+//             }
+//         }
+//     });
+// });
+
+// function createVideo(video) {
+//     console.log("createVideo(); video:" + video);
+//     var youtubeScriptId = "youtube-api";
+//     var youtubeScript = document.getElementById(youtubeScriptId);
+//     console.log("createVideo(); youtubeScript:");
+//     console.log(youtubeScript);
+//     var videoId = video.getAttribute("data-video-id");
+//     console.log(videoId);
+
+//     if (youtubeScript === null) {
+//         var tag = document.createElement("script");
+//         var firstScript = document.getElementsByTagName("script")[0];
+
+//         tag.src = "https://www.youtube.com/iframe_api";
+//         tag.id = youtubeScriptId;
+//         firstScript.parentNode.insertBefore(tag, firstScript);
+//     }
+
+//     window.onYouTubeIframeAPIReady = function () {
+//         window.player = new window.YT.Player(video, {
+//             videoId: videoId,
+//             playerVars: {
+//                 autoplay: 1,
+//                 modestbranding: 1,
+//                 rel: 0
+//             }
+//         });
+//     };
+// }

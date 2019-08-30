@@ -1189,8 +1189,7 @@
     "game_mr": false
   },
   {
-    "name": "Google Earth VR",
-    "steam_appid": 348250,
+    "name": "Google_Earth_VR",
     "detailed_description": "Google Планета Земля VR позволяет исследовать мир с абсолютно новой перспективы в виртуальной реальности. Прогуляться по улицам Токио, парить над Гранд-Каньоном, или прогуляться вокруг Эйфелевой башни. Это приложение виртуальной реальности позволяет увидеть в мире городов, достопримечательностей и природных чудес. Вы можете летать над городом, стоит на вершине самых высоких вершин, и даже парить в пространстве. Земля ВР поставляется с кинематографической туры и подобранных направлений, что отправлю тебя к Амазонке, Манхэттен, Гранд-Каньон, Швейцарские Альпы и многое другое.\n",
     "about_the_game": "Google Планета Земля VR позволяет исследовать мир с абсолютно новой перспективы в виртуальной реальности. Прогуляться по улицам Токио, парить над Гранд-Каньоном, или прогуляться вокруг Эйфелевой башни. Это приложение виртуальной реальности позволяет увидеть в мире городов, достопримечательностей и природных чудес. Вы можете летать над городом, стоит на вершине самых высоких вершин, и даже парить в пространстве. Земля ВР поставляется с кинематографической туры и подобранных направлений, что отправлю тебя к Амазонке, Манхэттен, Гранд-Каньон, Швейцарские Альпы и многое другое.\n",
     "short_description": "Google Планета Земля VR позволяет исследовать мир с абсолютно новой перспективы в виртуальной реальности. Прогуляться по улицам Токио, парить над Гранд-Каньоном, или прогуляться вокруг Эйфелевой башни.\n",
@@ -1199,17 +1198,23 @@
     "movies": [
       {
         "id": 0,
+        "thumbnail": "https://i.ytimg.com/vi/SCrkZOx5Q1M/maxresdefault.jpg",
         "webm": {
-          "low": "videos/googleEarthVR1.webm"
+          "low": "videos/googleEarthVR1_low.webm",
+          "max": "videos/googleEarthVR1_max.webm"
         },
-        "highlight": false
+        "highlight": false,
+        "youtube_url": "SCrkZOx5Q1M"
       },
       {
         "id": 0,
+        "thumbnail": "https://i.ytimg.com/vi/QMpXQ_XjPWY/maxresdefault.jpg",
         "webm": {
-          "low": "videos/googleEarthVR2.webm"
+          "low": "videos/googleEarthVR2_low.webm",
+          "max": "videos/googleEarthVR2_max.webm"
         },
-        "highlight": false
+        "highlight": false,
+        "youtube_url": "QMpXQ_XjPWY"
       }
     ],
     "game_rate": 0.8,
@@ -3711,42 +3716,42 @@
     "name": "The Lab",
     "steam_appid": 450390,
     "short_description": "Добро пожаловать в лабораторию, сборник номер-шкала клапана ВР эксперименты в карманной вселенной в пределах апертуры науки. Исправить робота, защищать замок, принять механическую собаку, и многое другое. Еще не продали? Это бесплатно!\n",
-    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/450390/header.jpg?t\u003d1565817309",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/450390/header_alt_assets_1_russian.jpg?t\u003d1567099772",
     "screenshots": [
       {
         "id": 0,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_62690ec83252d1699996f4d248a005eb27c9702d.600x338.jpg?t\u003d1565817309",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_62690ec83252d1699996f4d248a005eb27c9702d.1920x1080.jpg?t\u003d1565817309"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_62690ec83252d1699996f4d248a005eb27c9702d.600x338.jpg?t\u003d1567099772",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_62690ec83252d1699996f4d248a005eb27c9702d.1920x1080.jpg?t\u003d1567099772"
       },
       {
         "id": 1,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_1c17623855533a0b90c34061477a638a0200702d.600x338.jpg?t\u003d1565817309",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_1c17623855533a0b90c34061477a638a0200702d.1920x1080.jpg?t\u003d1565817309"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_1c17623855533a0b90c34061477a638a0200702d.600x338.jpg?t\u003d1567099772",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_1c17623855533a0b90c34061477a638a0200702d.1920x1080.jpg?t\u003d1567099772"
       },
       {
         "id": 2,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_b297c61cdc62c206561fa5c194ec24d179981918.600x338.jpg?t\u003d1565817309",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_b297c61cdc62c206561fa5c194ec24d179981918.1920x1080.jpg?t\u003d1565817309"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_b297c61cdc62c206561fa5c194ec24d179981918.600x338.jpg?t\u003d1567099772",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_b297c61cdc62c206561fa5c194ec24d179981918.1920x1080.jpg?t\u003d1567099772"
       },
       {
         "id": 3,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_bbdec73ee36fc998dbd22e197dee0c82e6ef8c6c.600x338.jpg?t\u003d1565817309",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_bbdec73ee36fc998dbd22e197dee0c82e6ef8c6c.1920x1080.jpg?t\u003d1565817309"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_bbdec73ee36fc998dbd22e197dee0c82e6ef8c6c.600x338.jpg?t\u003d1567099772",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_bbdec73ee36fc998dbd22e197dee0c82e6ef8c6c.1920x1080.jpg?t\u003d1567099772"
       },
       {
         "id": 4,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_828ea03ca82ac39110e337cfea9e652ae991e240.600x338.jpg?t\u003d1565817309",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_828ea03ca82ac39110e337cfea9e652ae991e240.1920x1080.jpg?t\u003d1565817309"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_828ea03ca82ac39110e337cfea9e652ae991e240.600x338.jpg?t\u003d1567099772",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_828ea03ca82ac39110e337cfea9e652ae991e240.1920x1080.jpg?t\u003d1567099772"
       },
       {
         "id": 5,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_54adacd5d22f775a2127177de458c21911e8ac6a.600x338.jpg?t\u003d1565817309",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_54adacd5d22f775a2127177de458c21911e8ac6a.1920x1080.jpg?t\u003d1565817309"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_54adacd5d22f775a2127177de458c21911e8ac6a.600x338.jpg?t\u003d1567099772",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_54adacd5d22f775a2127177de458c21911e8ac6a.1920x1080.jpg?t\u003d1567099772"
       },
       {
         "id": 6,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_e23896e296e69afb656bca5ab2f214844694e5a7.600x338.jpg?t\u003d1565817309",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_e23896e296e69afb656bca5ab2f214844694e5a7.1920x1080.jpg?t\u003d1565817309"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_e23896e296e69afb656bca5ab2f214844694e5a7.600x338.jpg?t\u003d1567099772",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/450390/ss_e23896e296e69afb656bca5ab2f214844694e5a7.1920x1080.jpg?t\u003d1567099772"
       }
     ],
     "movies": [
@@ -4307,24 +4312,30 @@
     "game_mr": false
   },
   {
-    "name": "Vivecraft(Minecraft)",
-    "short_description": "Майнкрафт не нуждается в представлении! Это ванильный Java version майнкрафт только в Виртуальной Реальности!",
-    "header_image": "https://i1.wp.com/www.vivecraft.org/wp-content/uploads/2016/07/wesYwME.png",
+    "name": "Minecraft-Vivecraft",
+    "short_description": "Майнкрафт не нуждается в представлении! Это ванильный JavaVersion майнкрафт только в Виртуальной Реальности!",
+    "header_image": "http://i1.wp.com/www.vivecraft.org/wp-content/uploads/2016/07/wesYwME.png",
     "screenshots": [],
     "movies": [
       {
         "id": 0,
+        "thumbnail": "https://i.ytimg.com/vi/4VMhLh-Io5w/maxresdefault.jpg",
         "webm": {
-          "low": "videos/minecraf24hour.webm"
+          "low": "videos/minecraft1_low.webm",
+          "max": "videos/minecraft1_max.webm"
         },
-        "highlight": false
+        "highlight": false,
+        "youtube_url": "4VMhLh-Io5w"
       },
       {
         "id": 0,
+        "thumbnail": "https://i.ytimg.com/vi/WlIJClWUCx8/maxresdefault.jpg",
         "webm": {
-          "low": "videos/minecraft2.webm"
+          "low": "videos/minecraft2_low.webm",
+          "max": "videos/minecraft2_max.webm"
         },
-        "highlight": false
+        "highlight": false,
+        "youtube_url": "WlIJClWUCx8"
       }
     ],
     "game_rate": 0.9,
@@ -4501,55 +4512,50 @@
     "name": "Bigscreen Beta",
     "steam_appid": 457550,
     "short_description": "Планируется две позволяет вам использовать ваш ПК в ВР. Смотреть фильмы с друзьями в виртуальном кинотеатре. Играть ваши любимые видео компьютерных игр на огромном экране. Притон в номера социального ВР чат. Участвовать в еженедельных 3Д киновечера, ВР LAN-вечеринках, и других мероприятиях.\n",
-    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/457550/header_alt_assets_2.jpg?t\u003d1562964968",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/457550/header_alt_assets_3.jpg?t\u003d1566872768",
     "screenshots": [
       {
         "id": 0,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_a2a0a47d62ef5548de22c0227403c5dab4221abb.600x338.jpg?t\u003d1562964968",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_a2a0a47d62ef5548de22c0227403c5dab4221abb.1920x1080.jpg?t\u003d1562964968"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_3e330e9c74513016eaa0a1d307180be0c293ec9a.600x338.jpg?t\u003d1566872768",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_3e330e9c74513016eaa0a1d307180be0c293ec9a.1920x1080.jpg?t\u003d1566872768"
       },
       {
         "id": 1,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_30be3776b94228f785c1a0b1b790a396b1b30ccc.600x338.jpg?t\u003d1562964968",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_30be3776b94228f785c1a0b1b790a396b1b30ccc.1920x1080.jpg?t\u003d1562964968"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_a2a0a47d62ef5548de22c0227403c5dab4221abb.600x338.jpg?t\u003d1566872768",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_a2a0a47d62ef5548de22c0227403c5dab4221abb.1920x1080.jpg?t\u003d1566872768"
       },
       {
         "id": 2,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_647cdccd8e17ebb6bb4f5abaa084b6f9fd423fb6.600x338.jpg?t\u003d1562964968",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_647cdccd8e17ebb6bb4f5abaa084b6f9fd423fb6.1920x1080.jpg?t\u003d1562964968"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_30be3776b94228f785c1a0b1b790a396b1b30ccc.600x338.jpg?t\u003d1566872768",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_30be3776b94228f785c1a0b1b790a396b1b30ccc.1920x1080.jpg?t\u003d1566872768"
       },
       {
         "id": 3,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_13aa476431c03e08cd12aea9530edb5d976b2da6.600x338.jpg?t\u003d1562964968",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_13aa476431c03e08cd12aea9530edb5d976b2da6.1920x1080.jpg?t\u003d1562964968"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_647cdccd8e17ebb6bb4f5abaa084b6f9fd423fb6.600x338.jpg?t\u003d1566872768",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_647cdccd8e17ebb6bb4f5abaa084b6f9fd423fb6.1920x1080.jpg?t\u003d1566872768"
       },
       {
         "id": 4,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_77e02b524e0906d2f7dca6c154aeb891ae4bf1a2.600x338.jpg?t\u003d1562964968",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_77e02b524e0906d2f7dca6c154aeb891ae4bf1a2.1920x1080.jpg?t\u003d1562964968"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_13aa476431c03e08cd12aea9530edb5d976b2da6.600x338.jpg?t\u003d1566872768",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_13aa476431c03e08cd12aea9530edb5d976b2da6.1920x1080.jpg?t\u003d1566872768"
       },
       {
         "id": 5,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_12d061222a34ae93ad5ef0580873d434ba4ab434.600x338.jpg?t\u003d1562964968",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_12d061222a34ae93ad5ef0580873d434ba4ab434.1920x1080.jpg?t\u003d1562964968"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_77e02b524e0906d2f7dca6c154aeb891ae4bf1a2.600x338.jpg?t\u003d1566872768",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_77e02b524e0906d2f7dca6c154aeb891ae4bf1a2.1920x1080.jpg?t\u003d1566872768"
       },
       {
         "id": 6,
-        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_39f44a8c86ff0afdc2dfbcf492f192ab9bb70f94.600x338.jpg?t\u003d1562964968",
-        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_39f44a8c86ff0afdc2dfbcf492f192ab9bb70f94.1920x1080.jpg?t\u003d1562964968"
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_12d061222a34ae93ad5ef0580873d434ba4ab434.600x338.jpg?t\u003d1566872768",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_12d061222a34ae93ad5ef0580873d434ba4ab434.1920x1080.jpg?t\u003d1566872768"
+      },
+      {
+        "id": 7,
+        "path_thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_39f44a8c86ff0afdc2dfbcf492f192ab9bb70f94.600x338.jpg?t\u003d1566872768",
+        "path_full": "https://steamcdn-a.akamaihd.net/steam/apps/457550/ss_39f44a8c86ff0afdc2dfbcf492f192ab9bb70f94.1920x1080.jpg?t\u003d1566872768"
       }
     ],
     "movies": [
-      {
-        "id": 256755950,
-        "name": "TV Update 2",
-        "thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/256755950/movie.293x165.jpg",
-        "webm": {
-          "low": "https://steamcdn-a.akamaihd.net/steam/apps/256755950/movie480",
-          "max": "https://steamcdn-a.akamaihd.net/steam/apps/256755950/movie_max"
-        },
-        "highlight": true
-      },
       {
         "id": 256750640,
         "name": "Trailer",
@@ -4557,6 +4563,16 @@
         "webm": {
           "low": "https://steamcdn-a.akamaihd.net/steam/apps/256750640/movie480",
           "max": "https://steamcdn-a.akamaihd.net/steam/apps/256750640/movie_max"
+        },
+        "highlight": true
+      },
+      {
+        "id": 256760232,
+        "name": "Cinema Update",
+        "thumbnail": "https://steamcdn-a.akamaihd.net/steam/apps/256760232/movie.293x165.jpg",
+        "webm": {
+          "low": "https://steamcdn-a.akamaihd.net/steam/apps/256760232/movie480",
+          "max": "https://steamcdn-a.akamaihd.net/steam/apps/256760232/movie_max"
         },
         "highlight": true
       }
@@ -5031,17 +5047,23 @@
     "movies": [
       {
         "id": 0,
+        "thumbnail": "https://i.ytimg.com/vi/JKO9fEjNiio/maxresdefault.jpg",
         "webm": {
-          "low": "videos/unrealEngine1.webm"
+          "low": "videos/unrealEngine1_low.webm",
+          "max": "videos/unrealEngine1_max.webm"
         },
-        "highlight": false
+        "highlight": false,
+        "youtube_url": "JKO9fEjNiio"
       },
       {
         "id": 0,
+        "thumbnail": "https://i.ytimg.com/vi/1VVr2vMVdjc/maxresdefault.jpg",
         "webm": {
-          "low": "videos/unrealEngine2.webm"
+          "low": "videos/unrealEngine2_low.webm",
+          "max": "videos/unrealEngine2_max.webm"
         },
-        "highlight": false
+        "highlight": false,
+        "youtube_url": "1VVr2vMVdjc"
       }
     ],
     "game_rate": 0.1,
