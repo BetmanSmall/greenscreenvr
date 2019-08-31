@@ -101,7 +101,7 @@ function addGameCard(gameData) {
             '       </div>' +
             '       <div class="modal-footer">' +
             '           <button type="button" class="btn btn-primary" onclick="window.location.href=\'https://store.steampowered.com/app/' + steam_appid + '\'">Steam</button>'+
-            '           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>'+
+            // '           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>'+
             '       </div>' +
             '    </div>' +
             '  </div>' +
@@ -203,7 +203,7 @@ function addGameCard(gameData) {
                         $('#cImDIV' + steam_appid).append(
                             '<div class="carousel-item' + ((m==0) ? (' active'):'') + '\">'+
                             '   <div class="carousel-video-inner">'+
-                            '       <iframe id="ytplayer" type="text/html" width="100%" height="" src="http://www.youtube.com/embed/' + gameData.movies[m].youtube_url + '" frameborder="0"/>'+
+                            '       <iframe id="ytplayer" type="text/html" width="100%" height="" src="https://www.youtube.com/embed/' + gameData.movies[m].youtube_url + '" frameborder="0"/>'+
                             // '       <div class="video-player" id="video-player_'+m+'_'+steam_appid+'" data-video-id="' + gameData.movies[m].youtube_url + '"></div>'+
                             '   </div>'+
                             '</div>'
