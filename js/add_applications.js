@@ -123,14 +123,26 @@ function addGameCard(gameData) {
                             gameData.short_description +
             '           </div>' +
             '       </div>' +
-            '       <div class="modal-footer">' +
-            '           <button type="button" class="btn btn-primary" onclick="window.location.href=\'https://store.steampowered.com/app/' + steam_appid + '\'">Steam</button>'+
-            // '           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>'+
-            '       </div>' +
             '    </div>' +
             '  </div>' +
             '</div>'
         )
+        // console.log(gameData.url);
+        if (gameData.url) {
+            $('#m' + steam_appid).find(".modal-content").append(
+                '<div class="modal-footer d-flex">' +
+                '    <button type="button" class="btn btn-primary m-auto" onclick="window.location.href=\'' + gameData.url + '\'">Go to</button>'+
+                // '    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>'+
+                '</div>'
+            )
+        } else {
+            $('#m' + steam_appid).find(".modal-content").append(
+                '<div class="modal-footer d-flex">' +
+                '    <button type="button" class="btn btn-primary m-auto" onclick="window.location.href=\'https://store.steampowered.com/app/' + steam_appid + '\'">Steam</button>'+
+                // '    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>'+
+                '</div>'
+            )
+        }
         if (gameData.game_mr) {
             $('#divWithIcons' + steam_appid).append(
                 '<button type="button" class="btn btn-success btn-circle popover-ex" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="Смешанная реальность" data-content="Данная игра поддерживает съемку при помощи технологии хромакей"><img src="img/mr.svg" height="30px" class="icon" alt=""></button>'

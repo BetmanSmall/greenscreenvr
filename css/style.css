@@ -351,10 +351,6 @@ hr {
     padding-top: 12px;
 }
 
-.modal-footer {
-    align-self: center;
-}
-
 #text {
     padding-top: 12px;
 }
@@ -368,8 +364,12 @@ hr {
     border-radius: 30px;
 }
 
-.show_more {
+.show_more_btns {
     padding-top: 20px;
+}
+
+#show_more.btn, #show_all.btn {
+    margin-bottom: 10px;
 }
 
 #games .col-md-6 {
