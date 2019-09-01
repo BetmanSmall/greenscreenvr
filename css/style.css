@@ -340,7 +340,7 @@ hr {
 
 .carousel-controls {
     top: 50%;
-    margin: -15px;
+    margin-top: -15px;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon, .carousel-controls {
