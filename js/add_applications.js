@@ -37,6 +37,30 @@ $('#show_more').click(function() {
     }
     if (addedCount == dataGames.length) {
         $('#show_more').remove();
+        $('#show_all').remove();
+    }
+    
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    $(function () {
+        $('.popover-ex').popover({
+            container: 'body'
+        })
+    })
+    $('.popover-dismiss').popover({
+        trigger: 'focus'
+    })
+});
+
+$('#show_all').click(function() {
+    var willGames = addedCount;
+    for (var i = 0; i < dataGames.length; i++) {
+        addGameCard(dataGames[willGames + i])
+    }
+    if (addedCount == dataGames.length) {
+        $('#show_more').remove();
+        $('#show_all').remove();
     }
     
     $(function () {
