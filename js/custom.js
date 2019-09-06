@@ -35,13 +35,13 @@ $('.nav-link, .navbar-brand, .new-button').click(function () {
     }, 1000);
 });
 
-document.addEventListener('click', function (e) {
-    var map = document.querySelector('#map-wrap iframe')
-    if (map != null) {
-        if (e.target.id === 'map-wrap') {
-            map.style.pointerEvents = 'all'
-        } else {
-            map.style.pointerEvents = 'none'
-        }
-    }
-})
+// document.addEventListener('click', function (e) {
+//     var map = document.querySelector('#map-wrap iframe')
+//     if (map != null) {
+//         if (e.target.id === 'map-wrap') {
+//             map.style.pointerEvents = 'all'
+//         } else {
+//             map.style.pointerEvents = 'none'
+//         }
+//     }
+// })
