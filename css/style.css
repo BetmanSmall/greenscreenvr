@@ -247,7 +247,6 @@ footer {
 }
 
 /* GAMES */
-
 .Portfolio {
     width: 100%;
     transition-duration: 0.4s;
@@ -391,6 +390,7 @@ div.carousel-video-inner {
     height: 0;
 }
 
+/* GAMES */
 iframe {
     position: absolute;
     top: 0;
@@ -398,4 +398,11 @@ iframe {
     width: 100%;
     height: 100%;
 }
-/* GAMES */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles */
+    .modal-footer .mx-auto {
+        margin-left: 0 !important;
+        margin-right: 45% !important;
+    }
+}
